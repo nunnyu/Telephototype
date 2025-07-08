@@ -26,6 +26,17 @@ public class PlayerMovement : MonoBehaviour
         {
             Moving = false;
         }
+
+        // Handle Animations
+        var animator = GetComponent<Animator>();
+        if (Moving)
+        {
+            animator.SetBool("Walk_Down", true);
+        }
+        else
+        {
+            animator.SetBool("Walk_Down", false);
+        }
     }
 
     void FixedUpdate()
