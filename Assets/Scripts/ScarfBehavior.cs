@@ -18,6 +18,6 @@ public class ScarfBehavior : MonoBehaviour
             transform.rotation = Quaternion.identity;
         }
 
-        Debug.Log(PlayerMovement.Moving);
+        // Debug.Log(PlayerMovement.Moving);
     }
 }
