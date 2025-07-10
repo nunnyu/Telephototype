@@ -603,6 +603,22 @@ MonoBehaviour:
   rightShoulder: {fileID: 190474067}
   leftHand: {fileID: 383918948}
   rightHand: {fileID: 1389767895}
+  scarfSide: {x: 0, y: 0.15, z: 0}
+  scarfSideScale: {x: 0.9, y: 1.1, z: 0}
+  scarfBitSide: {x: -0.05, y: 0, z: 0}
+  leftShoulderSide: {x: 0, y: 0, z: 0}
+  rightShoulderSide: {x: 0, y: 0, z: 0}
+  leftHandSide: {x: 0, y: 0, z: 0}
+  rightHandSide: {x: 0.09, y: -0.28, z: 0}
+  scarfBitSortingOrder: 11
+  leftShoulderSortingOrder: 0
+  rightShoulderSortingOrder: 12
+  leftHandSortingOrder: 0
+  rightHandSortingOrder: 12
+  LeftShoulderRotation: {x: 0, y: 0, z: 0, w: 0}
+  RightShoulderRotation: {x: 0, y: 0, z: 0, w: 0}
+  LeftHandRotation: {x: 0, y: 0, z: 0, w: 0}
+  RightHandRotation: {x: 0, y: 0, z: 0.17450751, w: 0.98465586}
 --- !u!95 &460838341
 Animator:
   serializedVersion: 7

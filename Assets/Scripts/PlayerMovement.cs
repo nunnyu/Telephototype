@@ -3,8 +3,11 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     // Serialized Editor Fields 
+    [Header("Movement / Physics")]
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private float moveSpeed = 5f;
+
+    [Header("For walking backwards")]
     [SerializeField] private Vector3 scarfBitDisjoint;
 
     // GameObjects for Animations 
@@ -15,6 +18,27 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private GameObject rightShoulder;
     [SerializeField] private GameObject leftHand;
     [SerializeField] private GameObject rightHand;
+
+    // Positions for walking right
+    [Header("Limb Positions: walking right.")]
+    [SerializeField] private Vector3 scarfSide;
+    [SerializeField] private Vector3 scarfSideScale;
+    [SerializeField] private Vector3 scarfBitSide;
+    [SerializeField] private Vector3 leftShoulderSide;
+    [SerializeField] private Vector3 rightShoulderSide;
+    [SerializeField] private Vector3 leftHandSide;
+    [SerializeField] private Vector3 rightHandSide;
+    [SerializeField] private int scarfBitSortingOrder;
+    [SerializeField] private int leftShoulderSortingOrder;
+    [SerializeField] private int rightShoulderSortingOrder;
+    [SerializeField] private int leftHandSortingOrder;
+    [SerializeField] private int rightHandSortingOrder;
+
+    // Rotations for walking right 
+    [SerializeField] private Quaternion LeftShoulderRotation;
+    [SerializeField] private Quaternion RightShoulderRotation;
+    [SerializeField] private Quaternion LeftHandRotation;
+    [SerializeField] private Quaternion RightHandRotation;
 
     // Properties
     public static bool Moving { get; private set; }
@@ -27,12 +51,47 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 input;
     private float x;
     private float y;
-    private Vector2 scarfBitDefaultPos;
+
+    // Walk Forward Default Position
+    private Vector3 scarfDefaultPos;
+    private Vector3 scarfBitDefaultPos;
+    private Vector3 leftShoulderDefaultPos;
+    private Vector3 rightShoulderDefaultPos;
+    private Vector3 leftHandDefaultPos;
+    private Vector3 rightHandDefaultPos;
+
+    // Sorting Orders
+    private int defaultScarfBitSortingOrder;
+    private int defaultLeftShoulderSortingOrder;
+    private int defaultRightShoulderSortingOrder;
+    private int defaultLeftHandSortingOrder;
+    private int defaultRightHandSortingOrder;
+
+    // Default Rotations
+    private Quaternion defaultLeftShoulderRotation;
+    private Quaternion defaultRightShoulderRotation;
+    private Quaternion defaultLeftHandRotation;
+    private Quaternion defaultRightHandRotation;
 
     // Initialize everything
     void Start()
     {
-        scarfBitDefaultPos = scarfBit.transform.position;
+        // Calculate local offsets from the player's transform
+        scarfDefaultPos = scarf.transform.position - transform.position;
+        scarfBitDefaultPos = scarfBit.transform.position - transform.position;
+        leftShoulderDefaultPos = leftShoulder.transform.position - transform.position;
+        rightShoulderDefaultPos = rightShoulder.transform.position - transform.position;
+        leftHandDefaultPos = leftHand.transform.position - transform.position;
+        rightHandDefaultPos = rightHand.transform.position - transform.position;
+
+        defaultLeftShoulderSortingOrder = leftShoulder.GetComponent<Renderer>().sortingOrder;
+        defaultRightShoulderSortingOrder = rightShoulder.GetComponent<Renderer>().sortingOrder;
+        defaultLeftHandSortingOrder = leftHand.GetComponent<Renderer>().sortingOrder;
+        defaultRightHandSortingOrder = leftHand.GetComponent<Renderer>().sortingOrder;
+        defaultScarfBitSortingOrder = scarfBit.GetComponent<Renderer>().sortingOrder;
+
+        defaultLeftShoulderRotation = leftShoulder.transform.rotation;
+        defaultRightShoulderRotation = rightShoulder.transform.rotation;
     }
 
     // Inputs
@@ -48,6 +107,58 @@ public class PlayerMovement : MonoBehaviour
         HandleMovementAnimations();
         HandleArmMovements();
         PositionScarf();
+    }
+
+    // For moving sideways 
+    void ShiftLimbs(bool walkingSideways)
+    {
+        if (!walkingSideways)
+        {
+            // Reset positions (relative to player)
+            scarf.transform.position = transform.position + scarfDefaultPos;
+            scarfBit.transform.position = transform.position + scarfBitDefaultPos;
+            leftShoulder.transform.position = transform.position + leftShoulderDefaultPos;
+            rightShoulder.transform.position = transform.position + rightShoulderDefaultPos;
+            leftHand.transform.position = transform.position + leftHandDefaultPos;
+            rightHand.transform.position = transform.position + rightHandDefaultPos;
+
+            // Reset sorting orders
+            scarfBit.GetComponent<Renderer>().sortingOrder = defaultScarfBitSortingOrder;
+            leftShoulder.GetComponent<Renderer>().sortingOrder = defaultLeftShoulderSortingOrder;
+            rightShoulder.GetComponent<Renderer>().sortingOrder = defaultRightShoulderSortingOrder;
+            leftHand.GetComponent<Renderer>().sortingOrder = defaultLeftHandSortingOrder;
+            rightHand.GetComponent<Renderer>().sortingOrder = defaultRightHandSortingOrder;
+
+            // Reset rotations
+            leftShoulder.transform.rotation = defaultLeftShoulderRotation;
+            rightShoulder.transform.rotation = defaultRightShoulderRotation;
+            leftHand.transform.rotation = defaultLeftHandRotation;
+            rightHand.transform.rotation = defaultRightHandRotation;
+        }
+        else
+        {
+            // Shift to side positions (also relative to player)
+            scarf.transform.position = transform.position + scarfSide;
+            scarf.transform.localScale = scarfSideScale;
+            scarfBit.transform.position = transform.position + scarfBitSide;
+            leftShoulder.transform.position = transform.position + leftShoulderSide;
+            rightShoulder.transform.position = transform.position + rightShoulderSide;
+            leftHand.transform.position = transform.position + leftHandSide;
+            rightHand.transform.position = transform.position + rightHandSide;
+
+            // Update sorting orders for side view
+            scarfBit.GetComponent<Renderer>().sortingOrder = scarfBitSortingOrder;
+            leftShoulder.GetComponent<Renderer>().sortingOrder = leftShoulderSortingOrder;
+            rightShoulder.GetComponent<Renderer>().sortingOrder = rightShoulderSortingOrder;
+            leftHand.GetComponent<Renderer>().sortingOrder = leftHandSortingOrder;
+            rightHand.GetComponent<Renderer>().sortingOrder = rightHandSortingOrder;
+
+            // Update rotation
+            leftShoulder.transform.rotation = LeftShoulderRotation;
+            rightShoulder.transform.rotation = RightShoulderRotation;
+            leftHand.transform.rotation = LeftHandRotation;
+            rightHand.transform.rotation = RightHandRotation;
+        }
     }
 
     void UpdateMovementProperties()
@@ -100,11 +211,20 @@ public class PlayerMovement : MonoBehaviour
 
     void HandleMovementAnimations()
     {
+        // Default direction to face
+        transform.localScale = new Vector3(1, 1, 1);
+
         // Handle Animations
         var animator = GetComponent<Animator>();
 
-        // Default direction to face
-        transform.localScale = new Vector3(1, 1, 1);
+        if (Moving)
+        {
+            animator.SetBool("Moving", true);
+        }
+        else
+        {
+            animator.SetBool("Moving", false);
+        }
 
         if (MovingDown)
         {
@@ -132,10 +252,12 @@ public class PlayerMovement : MonoBehaviour
             }
 
             animator.SetBool("Walk_Side", true);
+            ShiftLimbs(true);
         }
         else
         {
             animator.SetBool("Walk_Side", false);
+            ShiftLimbs(false);
         }
     }
 
