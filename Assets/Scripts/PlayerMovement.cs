@@ -1,3 +1,4 @@
+using UnityEditor.Tilemaps;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -110,7 +111,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     // For moving sideways 
-    void ShiftLimbs(bool walkingSideways)
+    void ShiftLimbs(bool walkingSideways, bool walkingRight)
     {
         if (!walkingSideways)
         {
@@ -139,12 +140,30 @@ public class PlayerMovement : MonoBehaviour
         {
             // Shift to side positions (also relative to player)
             scarf.transform.position = transform.position + scarfSide;
-            scarf.transform.localScale = scarfSideScale;
             scarfBit.transform.position = transform.position + scarfBitSide;
             leftShoulder.transform.position = transform.position + leftShoulderSide;
             rightShoulder.transform.position = transform.position + rightShoulderSide;
             leftHand.transform.position = transform.position + leftHandSide;
             rightHand.transform.position = transform.position + rightHandSide;
+
+            int flip;
+            if (walkingRight)
+            {
+                flip = 1;
+                scarf.transform.localScale = scarfSideScale;
+            }
+            else
+            {
+                flip = -1;
+                scarf.transform.localScale = Vector3.Scale(scarfSideScale, new Vector3(-1, 1, 1));
+            }
+
+            scarf.transform.position = transform.position + new Vector3(scarfSide.x * flip, scarfSide.y, scarfSide.z);
+            scarfBit.transform.position = transform.position + new Vector3(scarfBitSide.x * flip, scarfBitSide.y, scarfBitSide.z);
+            leftShoulder.transform.position = transform.position + new Vector3(leftShoulderSide.x * flip, leftShoulderSide.y, leftShoulderSide.z);
+            rightShoulder.transform.position = transform.position + new Vector3(rightShoulderSide.x * flip, rightShoulderSide.y, rightShoulderSide.z);
+            leftHand.transform.position = transform.position + new Vector3(leftHandSide.x * flip, leftHandSide.y, leftHandSide.z);
+            rightHand.transform.position = transform.position + new Vector3(rightHandSide.x * flip, rightHandSide.y, rightHandSide.z);
 
             // Update sorting orders for side view
             scarfBit.GetComponent<Renderer>().sortingOrder = scarfBitSortingOrder;
@@ -154,10 +173,21 @@ public class PlayerMovement : MonoBehaviour
             rightHand.GetComponent<Renderer>().sortingOrder = rightHandSortingOrder;
 
             // Update rotation
-            leftShoulder.transform.rotation = LeftShoulderRotation;
-            rightShoulder.transform.rotation = RightShoulderRotation;
-            leftHand.transform.rotation = LeftHandRotation;
-            rightHand.transform.rotation = RightHandRotation;
+            if (walkingRight)
+            {
+                leftShoulder.transform.rotation = LeftShoulderRotation;
+                rightShoulder.transform.rotation = RightShoulderRotation;
+                leftHand.transform.rotation = LeftHandRotation;
+                rightHand.transform.rotation = RightHandRotation;
+            }
+            else
+            {
+                leftShoulder.transform.rotation = new Quaternion(LeftShoulderRotation.x, LeftShoulderRotation.y, LeftShoulderRotation.z * -1, LeftShoulderRotation.w);
+                rightShoulder.transform.rotation = new Quaternion(RightShoulderRotation.x, RightShoulderRotation.y, RightShoulderRotation.z * -1, RightShoulderRotation.w);
+                leftHand.transform.rotation = new Quaternion(LeftHandRotation.x, LeftHandRotation.y, LeftHandRotation.z * -1, LeftHandRotation.w);
+                rightHand.transform.rotation = new Quaternion(RightHandRotation.x, RightHandRotation.y, RightHandRotation.z * -1, RightHandRotation.w);
+                scarfBit.GetComponent<Renderer>().sortingOrder = scarf.GetComponent<Renderer>().sortingOrder - 1;
+            }
         }
     }
 
@@ -244,20 +274,28 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("Walk_Up", false);
         }
 
-        if (MovingRight || MovingLeft)
+        if ((MovingRight || MovingLeft) && !(MovingUp || MovingDown))
         {
             if (MovingLeft)
             {
                 transform.localScale = new Vector3(-1, 1, 1); // Flip the model, facing right is default
+                ShiftLimbs(true, false);
+            }
+            else
+            {
+                ShiftLimbs(true, true);
             }
 
             animator.SetBool("Walk_Side", true);
-            ShiftLimbs(true);
         }
         else
         {
             animator.SetBool("Walk_Side", false);
-            ShiftLimbs(false);
+        }
+
+        if (!animator.GetBool("Walk_Side"))
+        {
+            ShiftLimbs(false, false);
         }
     }
 
