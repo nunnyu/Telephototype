@@ -25,20 +25,20 @@ public class TakePicture : MonoBehaviour
             if (!takingPic)
             {
                 OnCameraInput();
+                takingPic = true;
             }
-            
-            Invoke("Over", 1f);
         }
     }
 
     void OnCameraInput()
     {
-        takingPic = true;
         lastPosition = defaultPose.transform.position;
         defaultPose.SetActive(false);
 
         cameraPose.SetActive(true);
         cameraPose.transform.position = lastPosition;
+
+        Invoke("Over", 1f);
     }
 
     void Over()
