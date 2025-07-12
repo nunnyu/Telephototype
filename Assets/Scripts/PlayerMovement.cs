@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEditor.Tilemaps;
 using UnityEngine;
 
@@ -10,6 +11,9 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("For walking backwards")]
     [SerializeField] private Vector3 scarfBitDisjoint;
+
+    // Movement Delay
+    [SerializeField] private float postPictureStun = .2f;
 
     // GameObjects for Animations 
     [Header("Body Objects: these should be sprites, not the parent objects.")]
@@ -48,10 +52,10 @@ public class PlayerMovement : MonoBehaviour
     public static bool MovingLeft { get; private set; }
     public static bool MovingRight { get; private set; }
 
-    // Private or Flags 
-    private Vector2 input;
-    private float x;
-    private float y;
+    // Inputs
+    private Vector2 input; // (x, y) is the direction
+    private float x; // horizontal input direction
+    private float y; // vertical input direction 
 
     // Walk Forward Default Position
     private Vector3 scarfDefaultPos;
@@ -74,9 +78,31 @@ public class PlayerMovement : MonoBehaviour
     private Quaternion defaultLeftHandRotation;
     private Quaternion defaultRightHandRotation;
 
+    // Flags
+    private bool canMove;
+    private Vector2 lastNonZeroInput;
+
+    IEnumerator DelayedAction(System.Action action, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        action();
+    }
+
+    void OnEnable()
+    {
+        canMove = false;
+        StartCoroutine(DelayedAction(() =>
+        {
+            canMove = true;
+        }, postPictureStun));
+    }
+
     // Initialize everything
     void Start()
     {
+        // Let's just say that when you start idle, you have "input" down
+        lastNonZeroInput = new Vector2(0, -1f);
+
         // Calculate local offsets from the player's transform
         scarfDefaultPos = scarf.transform.position - transform.position;
         scarfBitDefaultPos = scarfBit.transform.position - transform.position;
@@ -93,21 +119,78 @@ public class PlayerMovement : MonoBehaviour
 
         defaultLeftShoulderRotation = leftShoulder.transform.rotation;
         defaultRightShoulderRotation = rightShoulder.transform.rotation;
+
+        canMove = true;
     }
 
     // Inputs
     void Update()
     {
+        // If Rinko can't move, for however long, she will just idle animation at the camera
+        if (canMove)
+        {
+            ProcessInputs();
+            UpdateMovementProperties();
+            HandleMovementAnimations();
+            HandleArmMovements();
+            PositionScarf();
+        }
+        else
+        {
+            Moving = false;
+        }
+
+        if (input.magnitude != 0)
+        {
+            lastNonZeroInput = input;
+        }
+    }
+
+    void FixedUpdate()
+    {
+        if (canMove)
+        {
+            rb.MovePosition(rb.position + input * moveSpeed * Time.fixedDeltaTime);
+        }
+    }
+
+    void ProcessInputs()
+    {
         x = Input.GetAxisRaw("Horizontal");
         y = Input.GetAxisRaw("Vertical");
 
+        if (!canMove)
+        {
+            x = 0;
+            y = 0;
+        }
+
         input = Vector2.right * x + Vector2.up * y;
         input.Normalize();
+    }
 
-        UpdateMovementProperties();
-        HandleMovementAnimations();
-        HandleArmMovements();
-        PositionScarf();
+    public void ResetLimbs()
+    {
+        // Reset positions (relative to player)
+        scarf.transform.position = transform.position + scarfDefaultPos;
+        scarfBit.transform.position = transform.position + scarfBitDefaultPos;
+        leftShoulder.transform.position = transform.position + leftShoulderDefaultPos;
+        rightShoulder.transform.position = transform.position + rightShoulderDefaultPos;
+        leftHand.transform.position = transform.position + leftHandDefaultPos;
+        rightHand.transform.position = transform.position + rightHandDefaultPos;
+
+        // Reset sorting orders
+        scarfBit.GetComponent<Renderer>().sortingOrder = defaultScarfBitSortingOrder;
+        leftShoulder.GetComponent<Renderer>().sortingOrder = defaultLeftShoulderSortingOrder;
+        rightShoulder.GetComponent<Renderer>().sortingOrder = defaultRightShoulderSortingOrder;
+        leftHand.GetComponent<Renderer>().sortingOrder = defaultLeftHandSortingOrder;
+        rightHand.GetComponent<Renderer>().sortingOrder = defaultRightHandSortingOrder;
+
+        // Reset rotations
+        leftShoulder.transform.rotation = defaultLeftShoulderRotation;
+        rightShoulder.transform.rotation = defaultRightShoulderRotation;
+        leftHand.transform.rotation = defaultLeftHandRotation;
+        rightHand.transform.rotation = defaultRightHandRotation;
     }
 
     // For moving sideways 
@@ -115,26 +198,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!walkingSideways)
         {
-            // Reset positions (relative to player)
-            scarf.transform.position = transform.position + scarfDefaultPos;
-            scarfBit.transform.position = transform.position + scarfBitDefaultPos;
-            leftShoulder.transform.position = transform.position + leftShoulderDefaultPos;
-            rightShoulder.transform.position = transform.position + rightShoulderDefaultPos;
-            leftHand.transform.position = transform.position + leftHandDefaultPos;
-            rightHand.transform.position = transform.position + rightHandDefaultPos;
-
-            // Reset sorting orders
-            scarfBit.GetComponent<Renderer>().sortingOrder = defaultScarfBitSortingOrder;
-            leftShoulder.GetComponent<Renderer>().sortingOrder = defaultLeftShoulderSortingOrder;
-            rightShoulder.GetComponent<Renderer>().sortingOrder = defaultRightShoulderSortingOrder;
-            leftHand.GetComponent<Renderer>().sortingOrder = defaultLeftHandSortingOrder;
-            rightHand.GetComponent<Renderer>().sortingOrder = defaultRightHandSortingOrder;
-
-            // Reset rotations
-            leftShoulder.transform.rotation = defaultLeftShoulderRotation;
-            rightShoulder.transform.rotation = defaultRightShoulderRotation;
-            leftHand.transform.rotation = defaultLeftHandRotation;
-            rightHand.transform.rotation = defaultRightHandRotation;
+            ResetLimbs();
         }
         else
         {
@@ -349,8 +413,8 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    void FixedUpdate()
+    public Vector2 GetLastInput()
     {
-        rb.MovePosition(rb.position + input * moveSpeed * Time.fixedDeltaTime);
+        return lastNonZeroInput;
     }
 }

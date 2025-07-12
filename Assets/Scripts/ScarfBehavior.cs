@@ -7,8 +7,8 @@ public class ScarfBehavior : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        if (PlayerMovement.Moving)
+    {   
+        if (PlayerMovement.Moving && !TakePicture.TakingPic)
         {
             float zRotation = Mathf.PingPong(Time.time * speed, angle * 2) - angle;
             transform.rotation = Quaternion.Euler(0, 0, zRotation);

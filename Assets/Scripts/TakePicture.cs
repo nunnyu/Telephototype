@@ -12,7 +12,7 @@ public class TakePicture : MonoBehaviour
 
     private GameObject cameraPose;
     private Vector2 lastPosition;
-    private bool takingPic;
+    public static bool TakingPic { get; set; }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -26,7 +26,7 @@ public class TakePicture : MonoBehaviour
         cameraPose = cameraPoseDown; // Just a default, incase there are any weird bugs
         cameraPose.SetActive(false);
 
-        takingPic = false;
+        TakingPic = false;
     }
 
     // Update is called once per frame
@@ -36,10 +36,10 @@ public class TakePicture : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (!takingPic)
+            if (!TakingPic)
             {
                 OnCameraInput();
-                takingPic = true;
+                TakingPic = true;
             }
         }
     }
@@ -77,8 +77,14 @@ public class TakePicture : MonoBehaviour
 
     void Over()
     {
-        takingPic = false;
+        TakingPic = false;
         cameraPose.SetActive(false);
+
+        // Visual bug fix
+        defaultPose.transform.localScale = new Vector3(1, 1, 1);
+        defaultPose.GetComponent<PlayerMovement>().ResetLimbs();
+
+        // Back to default idle pose
         defaultPose.SetActive(true);
     }
 }
