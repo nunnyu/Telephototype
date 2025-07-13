@@ -1,0 +1,1955 @@
+fileFormatVersion: 2
+guid: 25810f83180df2a428b02b0c73043e24
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 814414597289706881
+    second: Sol Schori Thin(White)_0
+  - first:
+      213: 8767239836402929209
+    second: Sol Schori Thin(White)_1
+  - first:
+      213: 8220576118358723722
+    second: Sol Schori Thin(White)_2
+  - first:
+      213: 2253894377776506816
+    second: Sol Schori Thin(White)_3
+  - first:
+      213: 8143760426919751401
+    second: Sol Schori Thin(White)_4
+  - first:
+      213: -7833353832816402072
+    second: Sol Schori Thin(White)_5
+  - first:
+      213: 7999100885947155085
+    second: Sol Schori Thin(White)_6
+  - first:
+      213: -6861277501336362587
+    second: Sol Schori Thin(White)_7
+  - first:
+      213: 8004421412949460981
+    second: Sol Schori Thin(White)_8
+  - first:
+      213: 2512602839985819637
+    second: Sol Schori Thin(White)_9
+  - first:
+      213: -4343404208711738544
+    second: Sol Schori Thin(White)_10
+  - first:
+      213: -1048317364759968453
+    second: Sol Schori Thin(White)_11
+  - first:
+      213: 7785482533668362129
+    second: Sol Schori Thin(White)_12
+  - first:
+      213: -7302995780809997492
+    second: Sol Schori Thin(White)_13
+  - first:
+      213: -1505811594235734232
+    second: Sol Schori Thin(White)_14
+  - first:
+      213: 935277147229744475
+    second: Sol Schori Thin(White)_15
+  - first:
+      213: -2847621042171121822
+    second: Sol Schori Thin(White)_16
+  - first:
+      213: -8819433063188429466
+    second: Sol Schori Thin(White)_17
+  - first:
+      213: 734511150521466680
+    second: Sol Schori Thin(White)_18
+  - first:
+      213: 7156266604336294177
+    second: Sol Schori Thin(White)_19
+  - first:
+      213: 4518956918491054531
+    second: Sol Schori Thin(White)_20
+  - first:
+      213: -7068715001676381911
+    second: Sol Schori Thin(White)_21
+  - first:
+      213: 203640359105868328
+    second: Sol Schori Thin(White)_22
+  - first:
+      213: -109756703642391232
+    second: Sol Schori Thin(White)_23
+  - first:
+      213: 6159648646385773038
+    second: Sol Schori Thin(White)_24
+  - first:
+      213: 2658627601278338429
+    second: Sol Schori Thin(White)_25
+  - first:
+      213: -3418016142225873725
+    second: Sol Schori Thin(White)_26
+  - first:
+      213: 6907613456474573775
+    second: Sol Schori Thin(White)_27
+  - first:
+      213: 7201674228387460108
+    second: Sol Schori Thin(White)_28
+  - first:
+      213: 6074022430305644164
+    second: Sol Schori Thin(White)_29
+  - first:
+      213: -2046343887024334154
+    second: Sol Schori Thin(White)_30
+  - first:
+      213: -2958757423665774626
+    second: Sol Schori Thin(White)_31
+  - first:
+      213: -8706795175498494465
+    second: Sol Schori Thin(White)_32
+  - first:
+      213: -2511000259022376409
+    second: Sol Schori Thin(White)_33
+  - first:
+      213: -6755944862817266773
+    second: Sol Schori Thin(White)_34
+  - first:
+      213: -4373698130844470208
+    second: Sol Schori Thin(White)_35
+  - first:
+      213: 471225348147177876
+    second: Sol Schori Thin(White)_36
+  - first:
+      213: -542027441321862681
+    second: Sol Schori Thin(White)_37
+  - first:
+      213: -2356891433351125346
+    second: Sol Schori Thin(White)_38
+  - first:
+      213: 2326305313408229002
+    second: Sol Schori Thin(White)_39
+  - first:
+      213: 6040013087987316580
+    second: Sol Schori Thin(White)_40
+  - first:
+      213: 7573642916390406553
+    second: Sol Schori Thin(White)_41
+  - first:
+      213: 3185136894648604787
+    second: Sol Schori Thin(White)_42
+  - first:
+      213: -5960902681605728313
+    second: Sol Schori Thin(White)_43
+  - first:
+      213: -8534487646591193811
+    second: Sol Schori Thin(White)_44
+  - first:
+      213: 2905459377101435996
+    second: Sol Schori Thin(White)_45
+  - first:
+      213: 5034571042162608810
+    second: Sol Schori Thin(White)_46
+  - first:
+      213: 3626427468391807209
+    second: Sol Schori Thin(White)_47
+  - first:
+      213: 4928327065788092482
+    second: Sol Schori Thin(White)_48
+  - first:
+      213: -4245824290448909041
+    second: Sol Schori Thin(White)_49
+  - first:
+      213: 3422328439941323855
+    second: Sol Schori Thin(White)_50
+  - first:
+      213: -5408943212437807871
+    second: Sol Schori Thin(White)_51
+  - first:
+      213: -4962817206082928922
+    second: Sol Schori Thin(White)_52
+  - first:
+      213: -8030148635140806693
+    second: Sol Schori Thin(White)_53
+  - first:
+      213: 8489611953038309325
+    second: Sol Schori Thin(White)_54
+  - first:
+      213: -5671451042238044546
+    second: Sol Schori Thin(White)_55
+  - first:
+      213: 3051033424765353825
+    second: Sol Schori Thin(White)_56
+  - first:
+      213: -7157502093416832767
+    second: Sol Schori Thin(White)_57
+  - first:
+      213: -7004474837356935917
+    second: Sol Schori Thin(White)_58
+  - first:
+      213: -5526663238693714471
+    second: Sol Schori Thin(White)_59
+  - first:
+      213: -2977538654591086703
+    second: Sol Schori Thin(White)_60
+  - first:
+      213: 143887670953166517
+    second: Sol Schori Thin(White)_61
+  - first:
+      213: 7291962219828349382
+    second: Sol Schori Thin(White)_62
+  - first:
+      213: -282983825502542605
+    second: Sol Schori Thin(White)_63
+  - first:
+      213: -4890656121940458090
+    second: Sol Schori Thin(White)_64
+  - first:
+      213: -359135494867735443
+    second: Sol Schori Thin(White)_65
+  - first:
+      213: -7936928734890104434
+    second: Sol Schori Thin(White)_66
+  - first:
+      213: 7057600583483583673
+    second: Sol Schori Thin(White)_67
+  - first:
+      213: -1111353378069484083
+    second: Sol Schori Thin(White)_68
+  - first:
+      213: -1230750754589357465
+    second: Sol Schori Thin(White)_69
+  - first:
+      213: 7486746053626739665
+    second: Sol Schori Thin(White)_70
+  - first:
+      213: -726759808753631013
+    second: Sol Schori Thin(White)_71
+  - first:
+      213: 123057848166391938
+    second: Sol Schori Thin(White)_72
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 55
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1858853e2c16d4b00800000000000000
+      internalID: 814414597289706881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 47
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93e437d2e2e7ba970800000000000000
+      internalID: 8767239836402929209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_2
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 54
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8cc4d7dc6a551270800000000000000
+      internalID: 8220576118358723722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_3
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 55
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c76e94bef0774f10800000000000000
+      internalID: 2253894377776506816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_4
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 48
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ee6f66f5f2740170800000000000000
+      internalID: 8143760426919751401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_5
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 55
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 861a80321365a4390800000000000000
+      internalID: -7833353832816402072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_6
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 48
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d82846defd3820f60800000000000000
+      internalID: 7999100885947155085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_7
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 55
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a167731778d7c0a0800000000000000
+      internalID: -6861277501336362587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_8
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 48
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f70267adda651f60800000000000000
+      internalID: 8004421412949460981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_9
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 49
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ff0efa78fe8ed220800000000000000
+      internalID: 2512602839985819637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_10
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 56
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05bdccf62e029b3c0800000000000000
+      internalID: -4343404208711738544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_11
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 49
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b35cb9539e0a371f0800000000000000
+      internalID: -1048317364759968453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_12
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 56
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1979f487d179b0c60800000000000000
+      internalID: 7785482533668362129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_13
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 49
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c43c4a0c70c86aa90800000000000000
+      internalID: -7302995780809997492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_14
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 39
+        width: 9
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8271aea45584a1be0800000000000000
+      internalID: -1505811594235734232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 37
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5d6b2f2c95cafc00800000000000000
+      internalID: 935277147229744475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_16
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 40
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26f667edfb73b78d0800000000000000
+      internalID: -2847621042171121822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_17
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 47
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 665815c3b541b9580800000000000000
+      internalID: -8819433063188429466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_18
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 41
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83f3562fff1813a00800000000000000
+      internalID: 734511150521466680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_19
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 41
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 129a475af8a205360800000000000000
+      internalID: 7156266604336294177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_20
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 39
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c104f9ff5f86be30800000000000000
+      internalID: 4518956918491054531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_21
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 43
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 921ca9a5821e6ed90800000000000000
+      internalID: -7068715001676381911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_22
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 42
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8223072e3d973d200800000000000000
+      internalID: 203640359105868328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_23
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 43
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04d6dab0cd01a7ef0800000000000000
+      internalID: -109756703642391232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 31
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee92a050fc77b7550800000000000000
+      internalID: 6159648646385773038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_25
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 33
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d758e34a7b755e420800000000000000
+      internalID: 2658627601278338429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_26
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 34
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c463169d64c090d0800000000000000
+      internalID: -3418016142225873725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_27
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 34
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcb00ee27d5ccdf50800000000000000
+      internalID: 6907613456474573775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_28
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 36
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c04be1bfd8c71f360800000000000000
+      internalID: 7201674228387460108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_29
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 30
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48e6f1408334b4450800000000000000
+      internalID: 6074022430305644164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_30
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 35
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ba5f95a31de993e0800000000000000
+      internalID: -2046343887024334154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_31
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 28
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edff9d1acc160f6d0800000000000000
+      internalID: -2958757423665774626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_32
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 36
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffdc3502bef3b2780800000000000000
+      internalID: -8706795175498494465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_33
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 28
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 722be0a7192272dd0800000000000000
+      internalID: -2511000259022376409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_34
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 25
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba3d6a911ff0e32a0800000000000000
+      internalID: -6755944862817266773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 25
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 044b93c09b08d43c0800000000000000
+      internalID: -4373698130844470208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_36
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 26
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 499e87d15f02a8600800000000000000
+      internalID: 471225348147177876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_37
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 19
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e91f75f9e45a78f0800000000000000
+      internalID: -542027441321862681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_38
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 26
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e96e1fc8ab3aa4fd0800000000000000
+      internalID: -2356891433351125346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_39
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 19
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8e1dc47b52b84020800000000000000
+      internalID: 2326305313408229002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_40
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 27
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 467b134f6ef62d350800000000000000
+      internalID: 6040013087987316580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_41
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 20
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9998a170b1cfa1960800000000000000
+      internalID: 7573642916390406553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_42
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 27
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 378558e4121e33c20800000000000000
+      internalID: 3185136894648604787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_43
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 20
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c79732e79e964da0800000000000000
+      internalID: -5960902681605728313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_44
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 24
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2de8fcf3b86f8980800000000000000
+      internalID: -8534487646591193811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_45
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 21
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c547571e8e3425820800000000000000
+      internalID: 2905459377101435996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_46
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 21
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaa029440b36ed540800000000000000
+      internalID: 5034571042162608810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_47
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 20
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e87631a198a35230800000000000000
+      internalID: 3626427468391807209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 18
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2401e3dda5fe46440800000000000000
+      internalID: 4928327065788092482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 11
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0d511d9d4dc315c0800000000000000
+      internalID: -4245824290448909041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_50
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 12
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4c5b67759d8e7f20800000000000000
+      internalID: 3422328439941323855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_51
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 13
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10d526c5ec29fe4b0800000000000000
+      internalID: -5408943212437807871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_52
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 13
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eefa329b08802bb0800000000000000
+      internalID: -4962817206082928922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_53
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 13
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd728d4ac5e2f8090800000000000000
+      internalID: -8030148635140806693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_54
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 17
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc732c5671921d570800000000000000
+      internalID: 8489611953038309325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_55
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 10
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e76e1626355fa41b0800000000000000
+      internalID: -5671451042238044546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_56
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 14
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16f7bf81cb2775a20800000000000000
+      internalID: 3051033424765353825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_57
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 14
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10166c2a4c17bac90800000000000000
+      internalID: -7157502093416832767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_58
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 12
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3158d292f3b1bce90800000000000000
+      internalID: -7004474837356935917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_59
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d58370e0195d43b0800000000000000
+      internalID: -5526663238693714471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_60
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 5
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19f8a1c8e58ada6d0800000000000000
+      internalID: -2977538654591086703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_61
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 6
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b6c8ba03113ff100800000000000000
+      internalID: 143887670953166517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_62
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 6
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c900742101423560800000000000000
+      internalID: 7291962219828349382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_63
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 6
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f46db3c5b3a21cf0800000000000000
+      internalID: -282983825502542605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_64
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 4
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 695462d3b26e02cb0800000000000000
+      internalID: -4890656121940458090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_65
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 8
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6cac229b28140bf0800000000000000
+      internalID: -359135494867735443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_66
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 1
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e89e8450e5d5ad190800000000000000
+      internalID: -7936928734890104434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_67
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 6
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bce0218652a1f160800000000000000
+      internalID: 7057600583483583673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_68
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 4
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcdec38adfda390f0800000000000000
+      internalID: -1111353378069484083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_69
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76a48a1a5be7beee0800000000000000
+      internalID: -1230750754589357465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_70
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 0
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dbbaf98ed346e760800000000000000
+      internalID: 7486746053626739665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_71
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 0
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd08532fdc70ae5f0800000000000000
+      internalID: -726759808753631013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sol Schori Thin(White)_72
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 0
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28028cef57035b100800000000000000
+      internalID: 123057848166391938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

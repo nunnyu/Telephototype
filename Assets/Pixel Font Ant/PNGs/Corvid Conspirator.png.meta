@@ -1,0 +1,1805 @@
+fileFormatVersion: 2
+guid: f92327ee2f3a95d43957af3f4f055ec1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5179230299965964525
+    second: Corvid Conspirator_0
+  - first:
+      213: 5202177869489926031
+    second: Corvid Conspirator_1
+  - first:
+      213: -1545682495151990483
+    second: Corvid Conspirator_2
+  - first:
+      213: 7338500258097662536
+    second: Corvid Conspirator_3
+  - first:
+      213: -6887223648203112297
+    second: Corvid Conspirator_4
+  - first:
+      213: -1567301616098796097
+    second: Corvid Conspirator_5
+  - first:
+      213: 4738850509746914044
+    second: Corvid Conspirator_6
+  - first:
+      213: -967091455177560574
+    second: Corvid Conspirator_7
+  - first:
+      213: 4091614547388901084
+    second: Corvid Conspirator_8
+  - first:
+      213: -6988001454680581740
+    second: Corvid Conspirator_9
+  - first:
+      213: -5090053742777232198
+    second: Corvid Conspirator_10
+  - first:
+      213: -8158700051956535578
+    second: Corvid Conspirator_11
+  - first:
+      213: -5796666660320681554
+    second: Corvid Conspirator_12
+  - first:
+      213: -3913997875924674921
+    second: Corvid Conspirator_13
+  - first:
+      213: 8616082080517802329
+    second: Corvid Conspirator_14
+  - first:
+      213: -5439573871312508302
+    second: Corvid Conspirator_15
+  - first:
+      213: -4075300705716047183
+    second: Corvid Conspirator_16
+  - first:
+      213: -7344190983550457620
+    second: Corvid Conspirator_17
+  - first:
+      213: -8208078172050943888
+    second: Corvid Conspirator_18
+  - first:
+      213: 1320528583208157290
+    second: Corvid Conspirator_19
+  - first:
+      213: -7297124262176065324
+    second: Corvid Conspirator_20
+  - first:
+      213: -4115414950484571009
+    second: Corvid Conspirator_21
+  - first:
+      213: 7030703353751348297
+    second: Corvid Conspirator_22
+  - first:
+      213: 4217134129094179321
+    second: Corvid Conspirator_23
+  - first:
+      213: -2639109869752968001
+    second: Corvid Conspirator_24
+  - first:
+      213: -7480869585388177953
+    second: Corvid Conspirator_25
+  - first:
+      213: 5189611323823101336
+    second: Corvid Conspirator_26
+  - first:
+      213: 1177347369445622421
+    second: Corvid Conspirator_27
+  - first:
+      213: -6204845638898712622
+    second: Corvid Conspirator_28
+  - first:
+      213: 3214978325091520398
+    second: Corvid Conspirator_29
+  - first:
+      213: -2079535336260778681
+    second: Corvid Conspirator_30
+  - first:
+      213: -1507492493322333608
+    second: Corvid Conspirator_31
+  - first:
+      213: 7025434391662147687
+    second: Corvid Conspirator_32
+  - first:
+      213: -6363836455462066129
+    second: Corvid Conspirator_33
+  - first:
+      213: -6729900799149221927
+    second: Corvid Conspirator_34
+  - first:
+      213: 2356869462615354881
+    second: Corvid Conspirator_35
+  - first:
+      213: -8436562101198470199
+    second: Corvid Conspirator_36
+  - first:
+      213: 119990674083473030
+    second: Corvid Conspirator_37
+  - first:
+      213: 4838567752656610612
+    second: Corvid Conspirator_38
+  - first:
+      213: -1810261496962972624
+    second: Corvid Conspirator_39
+  - first:
+      213: 5338425019046357420
+    second: Corvid Conspirator_40
+  - first:
+      213: -1360858663189752010
+    second: Corvid Conspirator_41
+  - first:
+      213: -5975869098109082976
+    second: Corvid Conspirator_42
+  - first:
+      213: -631177602755490529
+    second: Corvid Conspirator_43
+  - first:
+      213: -427613595983587002
+    second: Corvid Conspirator_44
+  - first:
+      213: -8455883012724077890
+    second: Corvid Conspirator_45
+  - first:
+      213: -3252521572982863277
+    second: Corvid Conspirator_46
+  - first:
+      213: -8705753270306742297
+    second: Corvid Conspirator_47
+  - first:
+      213: 3146810170175635714
+    second: Corvid Conspirator_48
+  - first:
+      213: -6754878502773638748
+    second: Corvid Conspirator_49
+  - first:
+      213: 3356074932018614525
+    second: Corvid Conspirator_50
+  - first:
+      213: 9203513017031181082
+    second: Corvid Conspirator_51
+  - first:
+      213: -2561107782705470366
+    second: Corvid Conspirator_52
+  - first:
+      213: -8129711724280144043
+    second: Corvid Conspirator_53
+  - first:
+      213: 5091428711891139737
+    second: Corvid Conspirator_54
+  - first:
+      213: 7608608727317112302
+    second: Corvid Conspirator_55
+  - first:
+      213: -2991182480633313779
+    second: Corvid Conspirator_56
+  - first:
+      213: 7659293801700132970
+    second: Corvid Conspirator_57
+  - first:
+      213: -281096166429642333
+    second: Corvid Conspirator_58
+  - first:
+      213: -3860681063422340424
+    second: Corvid Conspirator_59
+  - first:
+      213: 2134516685745970630
+    second: Corvid Conspirator_60
+  - first:
+      213: 6471147641234681238
+    second: Corvid Conspirator_61
+  - first:
+      213: -6846897205970572337
+    second: Corvid Conspirator_62
+  - first:
+      213: -4845925981938149176
+    second: Corvid Conspirator_63
+  - first:
+      213: -3041255497921188434
+    second: Corvid Conspirator_64
+  - first:
+      213: -4365795578241279986
+    second: Corvid Conspirator_65
+  - first:
+      213: 1762942230502047445
+    second: Corvid Conspirator_66
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Corvid Conspirator_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de0496f548250e740800000000000000
+      internalID: 5179230299965964525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8f6851c539d13840800000000000000
+      internalID: 5202177869489926031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_2
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 16
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d291de4c5f1ac8ae0800000000000000
+      internalID: -1545682495151990483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_3
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 16
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84a060c8a1797d560800000000000000
+      internalID: 7338500258097662536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_4
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 24
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7900f20059aab60a0800000000000000
+      internalID: -6887223648203112297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_5
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 16
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbd198ceb73df3ae0800000000000000
+      internalID: -1567301616098796097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_6
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 16
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf2c42d5e67c3c140800000000000000
+      internalID: 4738850509746914044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_7
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20e63d402733492f0800000000000000
+      internalID: -967091455177560574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_8
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd6afe6a0c558c830800000000000000
+      internalID: 4091614547388901084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_9
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 16
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 499d9d373b1a50f90800000000000000
+      internalID: -6988001454680581740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_10
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 4
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab49d16d61f7c59b0800000000000000
+      internalID: -5090053742777232198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_11
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 24
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ee6b26878976ce80800000000000000
+      internalID: -8158700051956535578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_12
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 16
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea16c3e626a1e8fa0800000000000000
+      internalID: -5796666660320681554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_13
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 24
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79650e94bafaea9c0800000000000000
+      internalID: -3913997875924674921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_14
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 8
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9594fd49009729770800000000000000
+      internalID: 8616082080517802329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_15
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 24
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27aebe65260c284b0800000000000000
+      internalID: -5439573871312508302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_16
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 8
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b275ea999f9177c0800000000000000
+      internalID: -4075300705716047183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_17
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 16
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce829de2631341a90800000000000000
+      internalID: -7344190983550457620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_18
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 16
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 070144a046c071e80800000000000000
+      internalID: -8208078172050943888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_19
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 24
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a604fddffb5735210800000000000000
+      internalID: 1320528583208157290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_20
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 16
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d87c1735286bba90800000000000000
+      internalID: -7297124262176065324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_21
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 24
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7c090d28eb13e6c0800000000000000
+      internalID: -4115414950484571009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_22
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 16
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9442f713373129160800000000000000
+      internalID: 7030703353751348297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_23
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 16
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f9b5d6a525468a30800000000000000
+      internalID: 4217134129094179321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_24
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 24
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbc952a5e8fff5bd0800000000000000
+      internalID: -2639109869752968001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_25
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd5f9e75fbc9e2890800000000000000
+      internalID: -7480869585388177953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_26
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 15
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89512d6d004350840800000000000000
+      internalID: 5189611323823101336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_27
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 23
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5920c05d137c65010800000000000000
+      internalID: 1177347369445622421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_28
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 15
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2df7f4f14c5f3e9a0800000000000000
+      internalID: -6204845638898712622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_29
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 24
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8f09a3c0c5ed9c20800000000000000
+      internalID: 3214978325091520398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_30
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 16
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 745cd4821a10423e0800000000000000
+      internalID: -2079535336260778681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_31
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 23
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85254f9709f441be0800000000000000
+      internalID: -1507492493322333608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_32
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 16
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 768b5db5b5b5f7160800000000000000
+      internalID: 7025434391662147687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_33
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 24
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f28a087f57c1fa7a0800000000000000
+      internalID: -6363836455462066129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_34
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 16
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d7d71531e69a92a0800000000000000
+      internalID: -6729900799149221927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_35
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 24
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10e672df94845b020800000000000000
+      internalID: 2356869462615354881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_36
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 16
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c3ca80c77f4bea80800000000000000
+      internalID: -8436562101198470199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_37
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 686ea11e1ea4aa100800000000000000
+      internalID: 119990674083473030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_38
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 16
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 435e1c63cbb062340800000000000000
+      internalID: 4838567752656610612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_39
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 24
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03484fa72c8a0e6e0800000000000000
+      internalID: -1810261496962972624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_40
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 16
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca9e0584545e51a40800000000000000
+      internalID: 5338425019046357420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_41
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 23
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 637df0781424d1de0800000000000000
+      internalID: -1360858663189752010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_42
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 16
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a269fe77b2711da0800000000000000
+      internalID: -5975869098109082976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_43
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 23
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1d839d705b9d37f0800000000000000
+      internalID: -631177602755490529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_44
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 15
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 649554633bfc01af0800000000000000
+      internalID: -427613595983587002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_45
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 24
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eba425c733ba6aa80800000000000000
+      internalID: -8455883012724077890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_46
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 16
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35acf0aacd8bcd2d0800000000000000
+      internalID: -3252521572982863277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_47
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7efdb259683fe2780800000000000000
+      internalID: -8705753270306742297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 201c7e06d27bbab20800000000000000
+      internalID: 3146810170175635714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_49
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 8
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a931456ac9d142a0800000000000000
+      internalID: -6754878502773638748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_50
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 0
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df010929e5c239e20800000000000000
+      internalID: 3356074932018614525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_51
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 8
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a13c3d1a35279bf70800000000000000
+      internalID: 9203513017031181082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_52
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 0
+        width: 8
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2642a5c7a0e157cd0800000000000000
+      internalID: -2561107782705470366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_53
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 0
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55f14f382467d2f80800000000000000
+      internalID: -8129711724280144043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_54
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 0
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99cfe7b107368a640800000000000000
+      internalID: 5091428711891139737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_55
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 4
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee56caa4355379960800000000000000
+      internalID: 7608608727317112302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_56
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 0
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d06ca7fb16f2d76d0800000000000000
+      internalID: -2991182480633313779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_57
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 0
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6800b8c1274b4a60800000000000000
+      internalID: 7659293801700132970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_58
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 0
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a1bc34a688591cf0800000000000000
+      internalID: -281096166429642333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_59
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 0
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b252af070b1c6ac0800000000000000
+      internalID: -3860681063422340424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_60
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 0
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cd5805dd935f9d10800000000000000
+      internalID: 2134516685745970630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_61
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 0
+        width: 42
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69d66ec7e722ec950800000000000000
+      internalID: 6471147641234681238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_62
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 0
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcb6280844feaf0a0800000000000000
+      internalID: -6846897205970572337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_63
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 0
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c89db68effcfbcb0800000000000000
+      internalID: -4845925981938149176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_64
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 1
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ead2437ec3a4bc5d0800000000000000
+      internalID: -3041255497921188434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_65
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 0
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0815f47d049963c0800000000000000
+      internalID: -4365795578241279986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corvid Conspirator_66
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 0
+        width: 43
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5defb904e9a377810800000000000000
+      internalID: 1762942230502047445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
