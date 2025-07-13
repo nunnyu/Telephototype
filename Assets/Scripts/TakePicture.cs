@@ -10,6 +10,10 @@ public class TakePicture : MonoBehaviour
     [SerializeField] private GameObject cameraPoseLeft;
     [SerializeField] private GameObject cameraPoseRight;
 
+    [Header("Sound")]
+    [SerializeField] private AudioClip snapSound;
+    [SerializeField] private float soundDelay = .5f;
+
     private GameObject cameraPose;
     private Vector2 lastPosition;
     public static bool CanTakePicture;
@@ -68,6 +72,10 @@ public class TakePicture : MonoBehaviour
 
     void OnCameraInput()
     {
+        var audioSource = GetComponent<AudioSource>();
+        audioSource.clip = snapSound;
+        audioSource.PlayDelayed(soundDelay);
+
         lastPosition = defaultPose.transform.position;
         defaultPose.SetActive(false);
 
