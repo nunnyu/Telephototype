@@ -12,11 +12,13 @@ public class TakePicture : MonoBehaviour
 
     private GameObject cameraPose;
     private Vector2 lastPosition;
-    public static bool TakingPic { get; set; }
+    public static bool CanTakePicture;
+    public static bool TakingPic;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        CanTakePicture = true;
         defaultPose.SetActive(true);
         cameraPoseUp.SetActive(false);
         cameraPoseDown.SetActive(false);
@@ -34,7 +36,7 @@ public class TakePicture : MonoBehaviour
     {
         ChooseCameraPose();
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && CanTakePicture)
         {
             if (!TakingPic)
             {

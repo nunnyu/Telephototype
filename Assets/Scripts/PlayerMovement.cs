@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Vector3 scarfBitDisjoint;
 
     // Movement Delay
+    [Header("Movement Delay")]
     [SerializeField] private float postPictureStun = .2f;
 
     // GameObjects for Animations 
@@ -79,7 +80,8 @@ public class PlayerMovement : MonoBehaviour
     private Quaternion defaultRightHandRotation;
 
     // Flags
-    private bool canMove;
+    public static bool CanMove;
+    public static bool DialogueLock;
     private Vector2 lastNonZeroInput;
 
     IEnumerator DelayedAction(System.Action action, float delay)
@@ -90,10 +92,10 @@ public class PlayerMovement : MonoBehaviour
 
     void OnEnable()
     {
-        canMove = false;
+        CanMove = false;
         StartCoroutine(DelayedAction(() =>
         {
-            canMove = true;
+            CanMove = true;
         }, postPictureStun));
     }
 
@@ -120,14 +122,14 @@ public class PlayerMovement : MonoBehaviour
         defaultLeftShoulderRotation = leftShoulder.transform.rotation;
         defaultRightShoulderRotation = rightShoulder.transform.rotation;
 
-        canMove = true;
+        CanMove = true;
     }
 
     // Inputs
     void Update()
     {
         // If Rinko can't move, for however long, she will just idle animation at the camera
-        if (canMove)
+        if (CanMove && !DialogueLock)
         {
             ProcessInputs();
             UpdateMovementProperties();
@@ -140,6 +142,16 @@ public class PlayerMovement : MonoBehaviour
             Moving = false;
         }
 
+        if (DialogueLock)
+        {
+            // Rinko should be idle while listening / performing a dialogue 
+            GetComponent<Animator>().SetBool("Moving", false);
+            GetComponent<Animator>().SetBool("Walk_Side", false);
+            GetComponent<Animator>().SetBool("Walk_Up", false);
+            GetComponent<Animator>().SetBool("Walk_Down", false);
+            ShiftLimbs(false, false);
+        }
+
         if (input.magnitude != 0)
         {
             lastNonZeroInput = input;
@@ -148,7 +160,7 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (canMove)
+        if (CanMove && !DialogueLock)
         {
             rb.MovePosition(rb.position + input * moveSpeed * Time.fixedDeltaTime);
         }
@@ -159,7 +171,7 @@ public class PlayerMovement : MonoBehaviour
         x = Input.GetAxisRaw("Horizontal");
         y = Input.GetAxisRaw("Vertical");
 
-        if (!canMove)
+        if (!CanMove || DialogueLock)
         {
             x = 0;
             y = 0;

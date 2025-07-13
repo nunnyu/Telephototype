@@ -9,7 +9,6 @@ public class OnPicture : MonoBehaviour
     [Header("Bounce Effect Parameters")]
     [SerializeField] public float initialDisplacement = .1f;
     [SerializeField] private float lerpSpeed = 1f;
-
     private Vector3 targetScale;
     private Vector3 targetPos;
 

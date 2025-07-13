@@ -16,7 +16,7 @@ public class DialogueManager : MonoBehaviour
     {
         hidePosition = new Vector3(dialogueBox.transform.position.x, hidePositionOffset);
         shownPosition = new Vector3(dialogueBox.transform.position.x, shownPositionOffset);
-        
+
         targetPos = hidePosition;
         dialogueBox.transform.position = hidePosition;
     }
@@ -39,9 +39,13 @@ public class DialogueManager : MonoBehaviour
         if (ShowDialogue)
         {
             targetPos = shownPosition;
+            PlayerMovement.DialogueLock = true;
+            TakePicture.CanTakePicture = false;
         }
         else
         {
+            TakePicture.CanTakePicture = true;
+            PlayerMovement.DialogueLock = false;
             targetPos = hidePosition;
         }
     }
