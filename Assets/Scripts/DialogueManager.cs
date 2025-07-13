@@ -1,8 +1,12 @@
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
     [SerializeField] public GameObject dialogueBox;
+    [SerializeField] private GameObject text;
+    [SerializeField] private Image icon;
     [SerializeField] private float speed = 5f;
     [SerializeField] private float hidePositionOffset = -300;
     [SerializeField] private float shownPositionOffset = 50;
@@ -11,9 +15,21 @@ public class DialogueManager : MonoBehaviour
     private Vector3 shownPosition;
     public static bool ShowDialogue;
 
+    public void SetText(string txt)
+    {
+        text.GetComponent<TMP_Text>().text = txt;
+    }
+
+    public void SetSprite(Sprite sprite)
+    {
+        icon.sprite = sprite;
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        SetText("hello.");
+
         hidePosition = new Vector3(dialogueBox.transform.position.x, hidePositionOffset);
         shownPosition = new Vector3(dialogueBox.transform.position.x, shownPositionOffset);
 
@@ -31,7 +47,7 @@ public class DialogueManager : MonoBehaviour
         {
             ShowDialogue = true;
         }
-        if (Input.GetKeyDown(KeyCode.H))
+        if (Input.GetKeyDown(KeyCode.H) || Input.GetKeyDown(KeyCode.Z))
         {
             ShowDialogue = false;
         }
