@@ -70,7 +70,10 @@ public class TakePicture : MonoBehaviour
         defaultPose.SetActive(false);
 
         cameraPose.SetActive(true);
-        cameraPose.transform.position = lastPosition;
+        // cameraPose.transform.position = lastPosition;
+
+        Vector3 targetPos = new Vector3(lastPosition.x, lastPosition.y - cameraPose.GetComponent<OnPicture>().initialDisplacement);
+        cameraPose.transform.position = targetPos;
 
         Invoke("Over", 1f);
     }
