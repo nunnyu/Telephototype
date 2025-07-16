@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c547c239900028747aaea47fbdff6842
+guid: 6d5aa6277349ef245a411b966c31db92
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2552432188008791943
-    second: rinko_0
+      213: 6100849982027003660
+    second: pixilart-sprite (3)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,23 +113,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: rinko_0
+      name: HanekoMouth_0
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 0
-        width: 14
-        height: 32
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 78f79873d8f0c6320800000000000000
-      internalID: 2552432188008791943
+      spriteID: c3141eea407163140b6ea63949842f54
+      internalID: -430736020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HanekoMouth_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa4637ff3d0f6224bb239ff8dc6544e1
+      internalID: -47948541
       vertices: []
       indices: 
       edges: []
@@ -138,7 +160,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 203d36a9b48921f42a6ddb881370b61b
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +170,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      rinko_0: 2552432188008791943
+      HanekoMouth_0: -430736020
+      HanekoMouth_1: -47948541
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
