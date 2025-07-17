@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEditor.Tilemaps;
 using UnityEngine;
@@ -11,6 +12,11 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("For walking backwards")]
     [SerializeField] private Vector3 scarfBitDisjoint;
+
+    [Header("Collisions")]
+    [SerializeField] private Vector2 raycastBoxSize = new Vector2(1, 1);
+    [SerializeField] private LayerMask collisionLayerMask;
+    [SerializeField] private float offset = -.5f;
 
     // Movement Delay
     [Header("Movement Delay")]
@@ -167,10 +173,31 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (CanMove && !DialogueLock)
+        Vector2 direction = input.normalized;
+        float distance = moveSpeed * Time.fixedDeltaTime;
+        Vector2 position = new Vector3(transform.position.x, transform.position.y + offset);
+        RaycastHit2D hit = Physics2D.BoxCast(position, raycastBoxSize, 0f, direction, distance, collisionLayerMask);
+
+        // If nothing's in the way, we can move 
+        if (hit.collider == null)
         {
-            rb.MovePosition(rb.position + input * moveSpeed * Time.fixedDeltaTime);
+            if (CanMove && !DialogueLock)
+            {
+                rb.MovePosition(rb.position + input * moveSpeed * Time.fixedDeltaTime);
+            }
         }
+        else
+        {
+            float safeDistance = hit.distance - 0.01f; // Tiny gap to prevent clipping
+            rb.MovePosition(rb.position + direction * safeDistance);
+        }
+    }
+
+    void OnDrawGizmos()
+    {
+        // For collision detection 
+        Vector3 positionForGizmo = new Vector3(transform.position.x, transform.position.y + offset);
+        Gizmos.DrawWireCube(positionForGizmo, raycastBoxSize);
     }
 
     void ProcessInputs()
