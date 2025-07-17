@@ -84,6 +84,11 @@ public class PlayerMovement : MonoBehaviour
     public static bool DialogueLock;
     private Vector2 lastNonZeroInput;
 
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        Debug.Log(other);
+    }
+
     IEnumerator DelayedAction(System.Action action, float delay)
     {
         yield return new WaitForSeconds(delay);
@@ -102,6 +107,8 @@ public class PlayerMovement : MonoBehaviour
     // Initialize everything
     void Start()
     {
+        // GetComponent<Rigidbody>().freezeRotation = true;
+
         // Let's just say that when you start idle, you have "input" down
         lastNonZeroInput = new Vector2(0, -1f);
 
