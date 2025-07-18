@@ -5,11 +5,12 @@ TagManager:
   serializedVersion: 3
   tags:
   - CameraPoses
+  - CameraFlash
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ignore Flash
   - Water
   - UI
   - IgnoreProcessing
@@ -41,6 +42,9 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Ignore Flash
+    uniqueID: 2284595025
     locked: 0
   m_RenderingLayers:
   - Default

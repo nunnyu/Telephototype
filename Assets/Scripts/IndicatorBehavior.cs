@@ -19,10 +19,10 @@ public class IndicatorBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift))
-        {
-            ToggleVisible();
-        }
+        // if (Input.GetKeyDown(KeyCode.LeftShift))
+        // {
+        //     ToggleVisible();
+        // }
 
         // Direction and angle 
         Vector2 moveDir = player.GetComponent<PlayerMovement>().GetLastInput();
