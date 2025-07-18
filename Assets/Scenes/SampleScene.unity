@@ -1024,8 +1024,8 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 163277670}
   m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -2010372271
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_SortAtRoot: 0
 --- !u!4 &163277673
@@ -1037,7 +1037,7 @@ Transform:
   m_GameObject: {fileID: 163277670}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 9.4, z: 0}
+  m_LocalPosition: {x: 0, y: 9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3539,6 +3539,101 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &450018111
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 450018112}
+  - component: {fileID: 450018114}
+  - component: {fileID: 450018113}
+  m_Layer: 0
+  m_Name: hello?
+  m_TagString: Untagged
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &450018112
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 450018111}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.65, y: -1.34, z: 0.061742153}
+  m_LocalScale: {x: 8.58, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 799627491}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &450018113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 450018111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39e54484fbe20c54fa46d390e65125e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toDestroy: 1
+  dialogues:
+  - text: ...hello?
+    sprite: {fileID: -2795693140052960006, guid: ae955fb2a1ab10d429af77b34245a8f5, type: 3}
+--- !u!61 &450018114
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 450018111}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &460838336
 GameObject:
   m_ObjectHideFlags: 0
@@ -4630,7 +4725,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.99, z: -15}
+  m_LocalPosition: {x: 0, y: 0, z: -15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4850,7 +4945,7 @@ Transform:
   m_GameObject: {fileID: 609246662}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -2, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8403,6 +8498,9 @@ Transform:
   m_Children:
   - {fileID: 1136563287}
   - {fileID: 930098144}
+  - {fileID: 450018112}
+  - {fileID: 1546471627}
+  - {fileID: 1348561520}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &808217962
@@ -9121,7 +9219,7 @@ Transform:
   m_GameObject: {fileID: 930098143}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.65, y: -1.39, z: 0.061742153}
+  m_LocalPosition: {x: 1.65, y: 0.87, z: 0.061742153}
   m_LocalScale: {x: 8.58, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9139,9 +9237,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39e54484fbe20c54fa46d390e65125e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: i wonder what that strange noise is
   toDestroy: 1
-  sprite: {fileID: -2795693140052960006, guid: ae955fb2a1ab10d429af77b34245a8f5, type: 3}
+  dialogues:
+  - text: ...what is that weird noise??
+    sprite: {fileID: -2795693140052960006, guid: ae955fb2a1ab10d429af77b34245a8f5, type: 3}
 --- !u!61 &930098146
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10320,9 +10419,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39e54484fbe20c54fa46d390e65125e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: gulp. that's a far drop
   toDestroy: 0
-  sprite: {fileID: -2795693140052960006, guid: ae955fb2a1ab10d429af77b34245a8f5, type: 3}
+  dialogues:
+  - text: 'gulp. that''s a long fall '
+    sprite: {fileID: -2795693140052960006, guid: ae955fb2a1ab10d429af77b34245a8f5, type: 3}
 --- !u!61 &1136563289
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11493,6 +11593,124 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1348561519
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1348561520}
+  - component: {fileID: 1348561522}
+  - component: {fileID: 1348561521}
+  m_Layer: 0
+  m_Name: guidance
+  m_TagString: Untagged
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1348561520
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348561519}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.65, y: 6.15, z: 0.061742153}
+  m_LocalScale: {x: 8.58, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 799627491}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1348561521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348561519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39e54484fbe20c54fa46d390e65125e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toDestroy: 1
+  dialogues:
+  - text: your name is Rinko. correct?
+    sprite: {fileID: 6485290393343850530, guid: 3c5a06f19a7f5e947a8fd7961e028425, type: 3}
+  - text: umm i don't know
+    sprite: {fileID: -2795693140052960006, guid: ae955fb2a1ab10d429af77b34245a8f5, type: 3}
+  - text: ha, ha... you are rinko, yes. noko
+    sprite: {fileID: 6485290393343850530, guid: 3c5a06f19a7f5e947a8fd7961e028425, type: 3}
+  - text: i am a spirit, and i protect what is left of your identity-noko. that's
+      why i know your name.
+    sprite: {fileID: 6485290393343850530, guid: 3c5a06f19a7f5e947a8fd7961e028425, type: 3}
+  - text: 'your memories are scattered across this world-noko, as other spirits. '
+    sprite: {fileID: 6485290393343850530, guid: 3c5a06f19a7f5e947a8fd7961e028425, type: 3}
+  - text: 'the other spirits aren''t as kind as me, though. you''d probably want
+      to capture their light and have a closer look-noko. '
+    sprite: {fileID: 6485290393343850530, guid: 3c5a06f19a7f5e947a8fd7961e028425, type: 3}
+  - text: 'umm how am i supposed to do that? '
+    sprite: {fileID: -2795693140052960006, guid: ae955fb2a1ab10d429af77b34245a8f5, type: 3}
+  - text: 'what that camera of yours, noko. capture them in film at their most vulnerable,
+      and have a closer look. '
+    sprite: {fileID: 6485290393343850530, guid: 3c5a06f19a7f5e947a8fd7961e028425, type: 3}
+  - text: they usually show a weak-spot during their attacks, noko. i can help you
+      practice. come, and take a picure with me. i won't mind-noko. i won't hurt
+      you.
+    sprite: {fileID: 6485290393343850530, guid: 3c5a06f19a7f5e947a8fd7961e028425, type: 3}
+  - text: ok...
+    sprite: {fileID: -2795693140052960006, guid: ae955fb2a1ab10d429af77b34245a8f5, type: 3}
+--- !u!61 &1348561522
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348561519}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1370666579
 GameObject:
   m_ObjectHideFlags: 0
@@ -12533,6 +12751,116 @@ Transform:
   - {fileID: 316665150}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1546471626
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1546471627}
+  - component: {fileID: 1546471629}
+  - component: {fileID: 1546471628}
+  m_Layer: 0
+  m_Name: haneko convo
+  m_TagString: Untagged
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1546471627
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1546471626}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.65, y: 4.17, z: 0.061742153}
+  m_LocalScale: {x: 14.02, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 799627491}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1546471628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1546471626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39e54484fbe20c54fa46d390e65125e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toDestroy: 1
+  dialogues:
+  - text: noko noko... noko
+    sprite: {fileID: 6485290393343850530, guid: 3c5a06f19a7f5e947a8fd7961e028425, type: 3}
+  - text: WHAT IS THAT.
+    sprite: {fileID: -2795693140052960006, guid: ae955fb2a1ab10d429af77b34245a8f5, type: 3}
+  - text: oh? you're finally awake. i see you've figured out how to move-noko...
+    sprite: {fileID: 6485290393343850530, guid: 3c5a06f19a7f5e947a8fd7961e028425, type: 3}
+  - text: where am i?
+    sprite: {fileID: -2795693140052960006, guid: ae955fb2a1ab10d429af77b34245a8f5, type: 3}
+  - text: you are in the spirit realm. the afterlife-noko..!
+    sprite: {fileID: 6485290393343850530, guid: 3c5a06f19a7f5e947a8fd7961e028425, type: 3}
+  - text: I'M DEAD?
+    sprite: {fileID: -2795693140052960006, guid: ae955fb2a1ab10d429af77b34245a8f5, type: 3}
+  - text: i'd hope so, noko. my existence is tied to your lack-of being. i am haneko,
+      and here to guide you into the spirit realm...!
+    sprite: {fileID: 6485290393343850530, guid: 3c5a06f19a7f5e947a8fd7961e028425, type: 3}
+  - text: so come closer-noko.
+    sprite: {fileID: 6485290393343850530, guid: 3c5a06f19a7f5e947a8fd7961e028425, type: 3}
+--- !u!61 &1546471629
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1546471626}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1551696106
 GameObject:
   m_ObjectHideFlags: 0
@@ -13660,7 +13988,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.046313934, y: 0.13875927}
-  m_ConnectedAnchor: {x: 0.16667673, y: 0.13709342}
+  m_ConnectedAnchor: {x: 0.16667673, y: 0.13709353}
   m_UseConnectedAnchor: 1
   m_UseMotor: 0
   m_Motor:

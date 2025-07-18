@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 01d1db8012df0f94b926affbb0b86ebe
+guid: 3c5a06f19a7f5e947a8fd7961e028425
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6515641764836991310
-    second: HanekoHeadIcon 1_0
+      213: 6485290393343850530
+    second: HanekoIconFinal_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HanekoHeadIcon 1_0
+      name: HanekoIconFinal_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 137
-        height: 140
+        width: 572
+        height: 600
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2be1133165ac395a0800000000000000
-      internalID: -6515641764836991310
+      spriteID: 22873809041600a50800000000000000
+      internalID: 6485290393343850530
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c487665a1fd5f584c8ca6a15a0c1a7b2
     internalID: 0
     vertices: []
     indices: 
@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      HanekoIconFinal_0: 6485290393343850530
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

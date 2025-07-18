@@ -40,17 +40,17 @@ public class DialogueManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        dialogueBox.transform.position = Vector3.Lerp(dialogueBox.transform.position, targetPos, speed * Time.deltaTime);
-
         // For Testing Purposes
-        if (Input.GetKeyDown(KeyCode.G))
-        {
-            ShowDialogue = true;
-        }
-        if (Input.GetKeyDown(KeyCode.H) || Input.GetKeyDown(KeyCode.Z))
-        {
-            ShowDialogue = false;
-        }
+        // if (Input.GetKeyDown(KeyCode.G))
+        // {
+        //     ShowDialogue = true;
+        // }
+        // if (Input.GetKeyDown(KeyCode.H) || Input.GetKeyDown(KeyCode.Z))
+        // {
+        //     ShowDialogue = false;
+        // }
+        
+        dialogueBox.transform.position = Vector3.Lerp(dialogueBox.transform.position, targetPos, speed * Time.deltaTime);
 
         if (ShowDialogue)
         {
