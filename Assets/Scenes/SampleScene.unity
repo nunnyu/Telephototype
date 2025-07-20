@@ -587,6 +587,7 @@ GameObject:
   - component: {fileID: 74248363}
   - component: {fileID: 74248365}
   - component: {fileID: 74248364}
+  - component: {fileID: 74248366}
   m_Layer: 0
   m_Name: Light (1)
   m_TagString: CameraFlash
@@ -639,7 +640,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -707,6 +708,33 @@ MonoBehaviour:
   - {x: 0.5, y: -1, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!50 &74248366
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74248362}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
 --- !u!1 &75182577
 GameObject:
   m_ObjectHideFlags: 0
@@ -1044,6 +1072,7 @@ Transform:
   m_Children:
   - {fileID: 367568649}
   - {fileID: 377904722}
+  - {fileID: 1184766141}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &163277674
@@ -1064,6 +1093,7 @@ MonoBehaviour:
   distanceFromEnemy: 1.5
   attackDelay: 1.2
   attackObj: {fileID: 7612485403460820334, guid: 8d6f90d6d7ec5294eb1115a2d95b05d6, type: 3}
+  vulnerableLength: 1
 --- !u!1 &172579519
 GameObject:
   m_ObjectHideFlags: 0
@@ -2761,6 +2791,7 @@ GameObject:
   - component: {fileID: 367568651}
   - component: {fileID: 367568650}
   - component: {fileID: 367568652}
+  - component: {fileID: 367568653}
   m_Layer: 10
   m_Name: Head
   m_TagString: Untagged
@@ -2861,7 +2892,6 @@ Transform:
   - {fileID: 953882605}
   - {fileID: 1551696107}
   - {fileID: 1303884017}
-  - {fileID: 1184766141}
   - {fileID: 1415264382}
   m_Father: {fileID: 163277673}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2951,8 +2981,56 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
-  colorLerpSpeed: 1
+  colorLerpSpeed: 0.2
   sr: {fileID: 367568648}
+  targetColor: {r: 255, g: 255, b: 255, a: 1}
+  noEffectText: {fileID: 8039130890684001302, guid: 085bd611ae56dbf42a3072904d38220e, type: 3}
+--- !u!61 &367568653
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367568646}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.72, y: 0.79}
+  m_EdgeRadius: 0
 --- !u!1 &377904721
 GameObject:
   m_ObjectHideFlags: 0
@@ -10810,7 +10888,7 @@ GameObject:
   - component: {fileID: 1174602229}
   m_Layer: 0
   m_Name: Hitbox
-  m_TagString: Untagged
+  m_TagString: CameraFlash
   m_Icon: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10858,10 +10936,10 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.1111112, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 367568649}
+  m_Father: {fileID: 163277673}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1184766142
 MonoBehaviour:
@@ -12372,7 +12450,7 @@ GameObject:
   - component: {fileID: 1415264383}
   m_Layer: 0
   m_Name: Shadow (1)
-  m_TagString: Untagged
+  m_TagString: Shadow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

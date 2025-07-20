@@ -14,12 +14,18 @@ public class VerticalSorting : MonoBehaviour
 
     void LateUpdate()
     {
-        sortingGroup.sortingOrder = Mathf.RoundToInt((-primaryObject.position.y + offset) * 100);
+        if (primaryObject)
+        {
+            sortingGroup.sortingOrder = Mathf.RoundToInt((-primaryObject.position.y + offset) * 100);
+        }
     }
 
     void OnDrawGizmos()
     {
-        Vector3 positionForGizmo = new Vector3(primaryObject.position.x, -primaryObject.position.y + offset, primaryObject.position.z);
-        Gizmos.DrawSphere(positionForGizmo, 0.1f);
+        if (primaryObject)
+        {
+            Vector3 positionForGizmo = new Vector3(primaryObject.position.x, -primaryObject.position.y + offset, primaryObject.position.z);
+            Gizmos.DrawSphere(positionForGizmo, 0.1f);
+        }
     }
 }

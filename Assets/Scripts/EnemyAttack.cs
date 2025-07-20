@@ -12,7 +12,8 @@ public class EnemyAttack : MonoBehaviour
     [SerializeField] private float distanceFromEnemy = 1f;
     [SerializeField] private float attackDelay = .66f;
     [SerializeField] private GameObject attackObj;
-
+    [SerializeField] private float vulnerableLength = 1f;
+    public bool IsAttacking { get; private set; }
     private Vector3 targetScale;
     private Vector3 targetPos;
 
@@ -56,11 +57,19 @@ public class EnemyAttack : MonoBehaviour
 
     void ActivateInstance()
     {
+        IsAttacking = true;
         Vector3 direction = (target.position - transform.position).normalized;
         Vector3 targetOffset = direction * distanceFromEnemy;
         var targetPos = targetOffset + transform.position;
 
         Instantiate(attackObj, targetPos, Quaternion.identity);
         // Rotation will be handled in the prefab
+
+        Invoke("EndVulnerability", vulnerableLength);
+    }
+
+    void EndVulnerability()
+    {
+        IsAttacking = false;
     }
 }
