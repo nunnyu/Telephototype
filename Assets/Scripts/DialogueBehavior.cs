@@ -5,6 +5,7 @@ using UnityEngine;
 public class DialogueBehavior : MonoBehaviour
 {
     [SerializeField] private bool toDestroy = true;
+    [SerializeField] private bool automaticDestruction = false;
     [SerializeField] private Dialogue[] dialogues;
     private int current;
     private bool inDialogue = false;
@@ -17,6 +18,14 @@ public class DialogueBehavior : MonoBehaviour
         {
             DialogueManager.ShowDialogue = true;
             SetDialogue();
+        }
+    }
+
+    void Start()
+    {
+        if (automaticDestruction)
+        {
+            FindFirstObjectByType<DialogueManager>().DelayedDestruction(1);
         }
     }
 

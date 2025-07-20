@@ -3698,6 +3698,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toDestroy: 1
+  automaticDestruction: 0
   dialogues:
   - text: ...hello?
     sprite: {fileID: -2795693140052960006, guid: ae955fb2a1ab10d429af77b34245a8f5, type: 3}
@@ -3761,6 +3762,7 @@ GameObject:
   - component: {fileID: 460838339}
   - component: {fileID: 460838341}
   - component: {fileID: 460838342}
+  - component: {fileID: 460838343}
   m_Layer: 0
   m_Name: RinkoSprite
   m_TagString: Player
@@ -3974,6 +3976,52 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: -0.69882053}
   m_Radius: 0.30117947
+--- !u!61 &460838343
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 460838336}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.006363839, y: -0.12720299}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.875, y: 2}
+    newSize: {x: 0.875, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.48044163, y: 1.4910393}
+  m_EdgeRadius: 0
 --- !u!1 &466227706
 GameObject:
   m_ObjectHideFlags: 0
@@ -4838,7 +4886,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: -15}
+  m_LocalPosition: {x: 0, y: -2, z: -15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5058,7 +5106,7 @@ Transform:
   m_GameObject: {fileID: 609246662}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.8, y: 9.68, z: 0}
+  m_LocalPosition: {x: 0, y: -2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5909,6 +5957,7 @@ GameObject:
   - component: {fileID: 752671055}
   - component: {fileID: 752671059}
   - component: {fileID: 752671060}
+  - component: {fileID: 752671061}
   m_Layer: 0
   m_Name: CameraRinkoDown
   m_TagString: CameraPoses
@@ -6046,6 +6095,7 @@ MonoBehaviour:
   attackLength: 0.1
   hitbox: {fileID: 1174602228}
   camFlash: {fileID: 68449829}
+  parryText: {fileID: 8039130890684001302, guid: e96ae1d4363467444b1825a57fbeb3c8, type: 3}
 --- !u!82 &752671060
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6143,6 +6193,52 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!61 &752671061
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 752671053}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.875, y: 2}
+    newSize: {x: 0.875, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.875, y: 2}
+  m_EdgeRadius: 0
 --- !u!1 &756773357
 GameObject:
   m_ObjectHideFlags: 0
@@ -8817,7 +8913,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -0.0042056474, y: 0.20213437}
-  m_ConnectedAnchor: {x: -0.08861501, y: 0.27719688}
+  m_ConnectedAnchor: {x: -2.9386148, y: 0.2771964}
   m_UseConnectedAnchor: 1
   m_UseMotor: 0
   m_Motor:
@@ -9425,6 +9521,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toDestroy: 1
+  automaticDestruction: 0
   dialogues:
   - text: ...what is that weird noise??
     sprite: {fileID: -2795693140052960006, guid: ae955fb2a1ab10d429af77b34245a8f5, type: 3}
@@ -10607,6 +10704,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toDestroy: 0
+  automaticDestruction: 0
   dialogues:
   - text: 'gulp. that''s a long fall '
     sprite: {fileID: -2795693140052960006, guid: ae955fb2a1ab10d429af77b34245a8f5, type: 3}
@@ -11028,7 +11126,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -0.0042056474, y: 0.20213437}
-  m_ConnectedAnchor: {x: 0.1324141, y: 0.2620504}
+  m_ConnectedAnchor: {x: 0.1324141, y: 0.26205063}
   m_UseConnectedAnchor: 1
   m_UseMotor: 0
   m_Motor:
@@ -11275,6 +11373,8 @@ GameObject:
   - component: {fileID: 1286273530}
   - component: {fileID: 1286273532}
   - component: {fileID: 1286273533}
+  - component: {fileID: 1286273534}
+  - component: {fileID: 1286273535}
   m_Layer: 0
   m_Name: CameraRinkoLeft
   m_TagString: CameraPoses
@@ -11384,6 +11484,7 @@ MonoBehaviour:
   attackLength: 0.1
   hitbox: {fileID: 1174602228}
   camFlash: {fileID: 731079622}
+  parryText: {fileID: 8039130890684001302, guid: e96ae1d4363467444b1825a57fbeb3c8, type: 3}
 --- !u!82 &1286273533
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11481,6 +11582,79 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!61 &1286273534
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286273529}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.8125, y: 2}
+    newSize: {x: 0.8125, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.8125, y: 2}
+  m_EdgeRadius: 0
+--- !u!50 &1286273535
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286273529}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1303884016
 GameObject:
   m_ObjectHideFlags: 0
@@ -11826,6 +12000,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toDestroy: 1
+  automaticDestruction: 0
   dialogues:
   - text: your name is Rinko. correct?
     sprite: {fileID: 6485290393343850530, guid: 3c5a06f19a7f5e947a8fd7961e028425, type: 3}
@@ -12061,6 +12236,8 @@ GameObject:
   - component: {fileID: 1385737147}
   - component: {fileID: 1385737149}
   - component: {fileID: 1385737150}
+  - component: {fileID: 1385737151}
+  - component: {fileID: 1385737152}
   m_Layer: 0
   m_Name: CameraRinkoRight
   m_TagString: CameraPoses
@@ -12170,6 +12347,7 @@ MonoBehaviour:
   attackLength: 0.1
   hitbox: {fileID: 1174602228}
   camFlash: {fileID: 1393999540}
+  parryText: {fileID: 8039130890684001302, guid: e96ae1d4363467444b1825a57fbeb3c8, type: 3}
 --- !u!82 &1385737150
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12267,6 +12445,79 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!61 &1385737151
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385737146}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.8125, y: 2}
+    newSize: {x: 0.8125, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.8125, y: 2}
+  m_EdgeRadius: 0
+--- !u!50 &1385737152
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385737146}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1389767895
 GameObject:
   m_ObjectHideFlags: 0
@@ -13084,6 +13335,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toDestroy: 1
+  automaticDestruction: 0
   dialogues:
   - text: noko noko... noko
     sprite: {fileID: 6485290393343850530, guid: 3c5a06f19a7f5e947a8fd7961e028425, type: 3}
@@ -14275,7 +14527,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.046313934, y: 0.13875927}
-  m_ConnectedAnchor: {x: 0.16667676, y: 0.13709354}
+  m_ConnectedAnchor: {x: 0.16667673, y: 0.13709342}
   m_UseConnectedAnchor: 1
   m_UseMotor: 0
   m_Motor:
@@ -14975,6 +15227,7 @@ GameObject:
   - component: {fileID: 2058977147}
   - component: {fileID: 2058977150}
   - component: {fileID: 2058977151}
+  - component: {fileID: 2058977152}
   m_Layer: 0
   m_Name: CameraRinkoUp
   m_TagString: CameraPoses
@@ -15111,6 +15364,7 @@ MonoBehaviour:
   attackLength: 0.1
   hitbox: {fileID: 1174602228}
   camFlash: {fileID: 1057219533}
+  parryText: {fileID: 8039130890684001302, guid: e96ae1d4363467444b1825a57fbeb3c8, type: 3}
 --- !u!82 &2058977151
 AudioSource:
   m_ObjectHideFlags: 0
@@ -15208,6 +15462,52 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!61 &2058977152
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058977145}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.875, y: 2}
+    newSize: {x: 0.875, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.875, y: 2}
+  m_EdgeRadius: 0
 --- !u!1 &2117388321
 GameObject:
   m_ObjectHideFlags: 0

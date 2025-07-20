@@ -7,6 +7,8 @@ TagManager:
   - CameraPoses
   - CameraFlash
   - Shadow
+  - EnemyAttack
+  - TutorialAttack
   layers:
   - Default
   - TransparentFX

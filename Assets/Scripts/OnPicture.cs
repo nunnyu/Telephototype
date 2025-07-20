@@ -19,6 +19,9 @@ public class OnPicture : MonoBehaviour
     [SerializeField] private GameObject hitbox;
     [SerializeField] private GameObject camFlash;
 
+    [Header("Parry")]
+    [SerializeField] private GameObject parryText;
+
     private Vector3 targetScale;
     private Vector3 targetPos;
 
@@ -36,6 +39,19 @@ public class OnPicture : MonoBehaviour
         targetPos = new Vector3(parent.transform.position.x, parent.transform.position.y, transform.position.z);
 
         Invoke("Attack", attackDelay);
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "EnemyAttack" || other.tag == "TutorialAttack")
+        {
+            Instantiate(parryText,
+                new Vector3(transform.position.x, transform.position.y - 2, transform.position.z),
+                Quaternion.identity);
+            // We need to make sure the player knows they are invulnerable during wind-up! 
+
+            Destroy(other.gameObject);
+        }
     }
 
     // Update is called once per frame

@@ -25,6 +25,16 @@ public class DialogueManager : MonoBehaviour
         icon.sprite = sprite;
     }
 
+    public void DelayedDestruction(float delay)
+    {
+        Invoke("HideDialogue", delay);
+    }
+
+    void HideDialogue()
+    {
+        ShowDialogue = false;
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

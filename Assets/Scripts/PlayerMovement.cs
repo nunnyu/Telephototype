@@ -176,21 +176,37 @@ public class PlayerMovement : MonoBehaviour
         Vector2 direction = input.normalized;
         float distance = moveSpeed * Time.fixedDeltaTime;
         Vector2 position = new Vector3(transform.position.x, transform.position.y + offset);
-        RaycastHit2D hit = Physics2D.BoxCast(position, raycastBoxSize, 0f, direction, distance, collisionLayerMask);
 
-        // If nothing's in the way, we can move 
-        if (hit.collider == null)
+        RaycastHit2D[] hits = Physics2D.BoxCastAll(position, raycastBoxSize, 0f, direction, distance, collisionLayerMask);
+
+        bool blocked = false;
+        float shortestSafeDistance = distance;
+
+        foreach (RaycastHit2D hit in hits)
         {
-            if (CanMove && !DialogueLock)
+            if (hit.collider != null && !hit.collider.isTrigger)
             {
-                rb.MovePosition(rb.position + input * moveSpeed * Time.fixedDeltaTime);
+                blocked = true;
+                shortestSafeDistance = Mathf.Min(shortestSafeDistance, hit.distance - 0.01f); // Tiny buffer
             }
         }
-        else
+
+        if (CanMove && !DialogueLock)
         {
-            float safeDistance = hit.distance - 0.01f; // Tiny gap to prevent clipping
-            rb.MovePosition(rb.position + direction * safeDistance);
+            if (blocked)
+            {
+                rb.MovePosition(rb.position + direction * shortestSafeDistance);
+            }
+            else
+            {
+                Move(); // Nothing is blocking our position
+            }
         }
+    }
+
+    void Move()
+    {
+        rb.MovePosition(rb.position + input * moveSpeed * Time.fixedDeltaTime);
     }
 
     void OnDrawGizmos()
