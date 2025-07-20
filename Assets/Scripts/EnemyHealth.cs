@@ -102,9 +102,9 @@ public class EnemyHealth : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.G))
-        {
-            TakeDamage();
-        }
+        // if (Input.GetKeyDown(KeyCode.G))
+        // {
+        //     TakeDamage();
+        // }
     }
 }

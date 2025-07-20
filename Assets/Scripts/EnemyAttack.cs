@@ -45,10 +45,10 @@ public class EnemyAttack : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            Attack();
-        }
+        // if (Input.GetKeyDown(KeyCode.F))
+        // {
+        //     Attack();
+        // }
 
         // Bounce animation 
         transform.localScale = Vector3.Lerp(transform.localScale, targetScale, lerpSpeed * Time.deltaTime);
