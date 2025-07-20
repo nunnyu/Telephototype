@@ -36,7 +36,7 @@ public class EnemyAttack : MonoBehaviour
         }
 
         // Bounce Animation
-            transform.localScale = new Vector3(targetScale.x, targetScale.y - bounceScaleDown, transform.localScale.z);
+        transform.localScale = new Vector3(targetScale.x, targetScale.y - bounceScaleDown, transform.localScale.z);
         transform.position = new Vector3(transform.position.x, transform.position.y - bounceScaleDown / 2f, transform.position.z);
 
         Invoke("ActivateInstance", attackDelay);
