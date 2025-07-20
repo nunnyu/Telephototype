@@ -21,19 +21,16 @@ public class OnPicture : MonoBehaviour
 
     private Vector3 targetScale;
     private Vector3 targetPos;
-    private bool parried;
 
     void Awake()
     {
         hitbox.SetActive(false);
         camFlash.SetActive(false);
-        parried = false;
         targetScale = transform.localScale;
     }
 
     void OnEnable()
     {
-        parried = false;
         // Bounce effect on enable 
         transform.localScale = new Vector3(targetScale.x, targetScale.y - initialDisplacement, transform.localScale.z);
         targetPos = new Vector3(parent.transform.position.x, parent.transform.position.y, transform.position.z);
@@ -59,7 +56,6 @@ public class OnPicture : MonoBehaviour
         camFlash.SetActive(true);
 
         Invoke("EndAttack", attackLength);
-        // turn on the flash for a bit, and then 
     }
 
     void EndAttack()

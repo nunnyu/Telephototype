@@ -995,6 +995,7 @@ GameObject:
   - component: {fileID: 163277673}
   - component: {fileID: 163277672}
   - component: {fileID: 163277671}
+  - component: {fileID: 163277674}
   m_Layer: 10
   m_Name: Haneko
   m_TagString: Untagged
@@ -1047,6 +1048,24 @@ Transform:
   - {fileID: 1415264382}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &163277674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 163277670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b1fd75368d2353459a5ba54b28f7b8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bounceScaleDown: 0.64
+  lerpSpeed: 2
+  target: {fileID: 460838338}
+  distanceFromEnemy: 1.5
+  attackDelay: 1.2
+  attackObj: {fileID: 7612485403460820334, guid: 8d6f90d6d7ec5294eb1115a2d95b05d6, type: 3}
 --- !u!1 &172579519
 GameObject:
   m_ObjectHideFlags: 0
@@ -2879,7 +2898,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.003490448, y: -0.3826418}
+  m_Offset: {x: 0.0058229864, y: -0.3826418}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2889,7 +2908,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.1173825, y: 0.4739151}
+  m_Size: {x: 0.86080223, y: 0.4739151}
   m_EdgeRadius: 0
 --- !u!50 &367568651
 Rigidbody2D:
@@ -4945,7 +4964,7 @@ Transform:
   m_GameObject: {fileID: 609246662}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -2, z: 0}
+  m_LocalPosition: {x: -3.8, y: 9.68, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4990,8 +5009,8 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 25b19cd98ab265d49a6142ca07cedaa9, type: 3}
   m_Resource: {fileID: 8300000, guid: 25b19cd98ab265d49a6142ca07cedaa9, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
+  m_Volume: 0.2
+  m_Pitch: 1.3
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -5064,7 +5083,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 1.1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -5946,7 +5965,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 19643a9ef62aa604ab544c53b3fde985, type: 3}
   m_Resource: {fileID: 8300000, guid: 19643a9ef62aa604ab544c53b3fde985, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -11284,7 +11303,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 19643a9ef62aa604ab544c53b3fde985, type: 3}
   m_Resource: {fileID: 8300000, guid: 19643a9ef62aa604ab544c53b3fde985, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -11723,10 +11742,12 @@ MonoBehaviour:
   - text: i am a spirit, and i protect what is left of your identity-noko. that's
       why i know your name.
     sprite: {fileID: 6485290393343850530, guid: 3c5a06f19a7f5e947a8fd7961e028425, type: 3}
+  - text: i want my memories back. who am i?
+    sprite: {fileID: -2795693140052960006, guid: ae955fb2a1ab10d429af77b34245a8f5, type: 3}
   - text: 'your memories are scattered across this world-noko, as other spirits. '
     sprite: {fileID: 6485290393343850530, guid: 3c5a06f19a7f5e947a8fd7961e028425, type: 3}
-  - text: 'the other spirits aren''t as kind as me, though. you''d probably want
-      to capture their light and have a closer look-noko. '
+  - text: 'the other spirits aren''t as kind as me, noko. they won''t just tell you
+      things. you''d probably want to capture their light and have a closer look-noko. '
     sprite: {fileID: 6485290393343850530, guid: 3c5a06f19a7f5e947a8fd7961e028425, type: 3}
   - text: 'umm how am i supposed to do that? '
     sprite: {fileID: -2795693140052960006, guid: ae955fb2a1ab10d429af77b34245a8f5, type: 3}
@@ -11737,7 +11758,7 @@ MonoBehaviour:
       practice. come, and take a picure with me. i won't mind-noko. i won't hurt
       you.
     sprite: {fileID: 6485290393343850530, guid: 3c5a06f19a7f5e947a8fd7961e028425, type: 3}
-  - text: ok...
+  - text: ...
     sprite: {fileID: -2795693140052960006, guid: ae955fb2a1ab10d429af77b34245a8f5, type: 3}
 --- !u!61 &1348561522
 BoxCollider2D:
@@ -11795,6 +11816,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1370666580}
   - component: {fileID: 1370666581}
+  - component: {fileID: 1370666582}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -11836,6 +11858,103 @@ MonoBehaviour:
   speed: 5
   hidePositionOffset: -300
   shownPositionOffset: 50
+--- !u!82 &1370666582
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370666579}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 3e8f2475bcd31a94dae546fd5f5acd91, type: 3}
+  m_Resource: {fileID: 8300000, guid: 3e8f2475bcd31a94dae546fd5f5acd91, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1385737146
 GameObject:
   m_ObjectHideFlags: 0
@@ -11970,7 +12089,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 19643a9ef62aa604ab544c53b3fde985, type: 3}
   m_Resource: {fileID: 8300000, guid: 19643a9ef62aa604ab544c53b3fde985, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -14062,7 +14181,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.046313934, y: 0.13875927}
-  m_ConnectedAnchor: {x: 0.16667673, y: 0.13709342}
+  m_ConnectedAnchor: {x: 0.16667676, y: 0.13709354}
   m_UseConnectedAnchor: 1
   m_UseMotor: 0
   m_Motor:
@@ -14911,7 +15030,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 19643a9ef62aa604ab544c53b3fde985, type: 3}
   m_Resource: {fileID: 8300000, guid: 19643a9ef62aa604ab544c53b3fde985, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
