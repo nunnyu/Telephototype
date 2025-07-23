@@ -4,13 +4,28 @@ using UnityEngine;
 
 public class HanekoBehavior : MonoBehaviour
 {
+    [SerializeField] private float lowestDelay = 3f;
+    [SerializeField] private float highestDelay = 5f;
+    [SerializeField] private EnemyHealth health;
     private bool Attacking = false;
     private bool isAttackingCoroutineRunning = false;
 
     void Start()
     {
-        GameManager.OnTutorialFightStart += StartAttacking;
-        GameManager.OnTutorialFightEnd += StopAttacking;
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.OnTutorialFightStart.AddListener(StartAttacking);
+            GameManager.Instance.OnTutorialFightEnd.AddListener(StopAttacking);
+        }
+    }
+
+    void OnDisable()
+    {
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.OnTutorialFightStart.RemoveListener(StartAttacking);
+            GameManager.Instance.OnTutorialFightEnd.RemoveListener(StopAttacking);
+        }
     }
 
     void StopAttacking()
@@ -20,16 +35,19 @@ public class HanekoBehavior : MonoBehaviour
 
     void StartAttacking()
     {
+        Debug.Log("Haneko got the START ATTACK event!");
         Attacking = true;
-    }
-
-    void OnDestroy()
-    {
-        GameManager.OnTutorialFightStart -= StartAttacking;
     }
 
     void Update()
     {
+        int healthNum = health.GetHealth();
+        if (healthNum == 0)
+        {
+            GameManager.Instance.TriggerTutorialFightEnd();
+        }
+
+        Debug.Log("Attacking: " + Attacking);
         if (Attacking && !isAttackingCoroutineRunning)
         {
             StartCoroutine(RandomAttackLoop());
@@ -42,7 +60,7 @@ public class HanekoBehavior : MonoBehaviour
         while (Attacking)
         {
             GetComponent<EnemyAttack>().Attack();
-            float waitTime = UnityEngine.Random.Range(1f, 3f);
+            float waitTime = UnityEngine.Random.Range(lowestDelay, highestDelay);
             yield return new WaitForSeconds(waitTime);
         }
         isAttackingCoroutineRunning = false;

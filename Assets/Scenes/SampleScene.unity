@@ -1107,6 +1107,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74dbbb462a1cbba4290e4c1c950df019, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lowestDelay: 3
+  highestDelay: 5
+  health: {fileID: 367568652}
 --- !u!1 &172579519
 GameObject:
   m_ObjectHideFlags: 0
@@ -8778,7 +8781,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &799627491
 Transform:
   m_ObjectHideFlags: 0
@@ -8797,7 +8800,6 @@ Transform:
   - {fileID: 450018112}
   - {fileID: 1546471627}
   - {fileID: 1348561520}
-  - {fileID: 1926930505}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &808217962
@@ -12251,6 +12253,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14d36cecbc0d43d4ea05bc73826cf579, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnTutorialFightStart:
+    m_PersistentCalls:
+      m_Calls: []
+  OnTutorialFightEnd:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1385737146
 GameObject:
   m_ObjectHideFlags: 0
@@ -14822,11 +14830,11 @@ Transform:
   m_GameObject: {fileID: 1926930504}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.65, y: 6.34, z: 0.061742153}
+  m_LocalPosition: {x: -0.0025632381, y: 7.507288, z: 0}
   m_LocalScale: {x: 14.27, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 799627491}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1926930507
 BoxCollider2D:
@@ -14886,6 +14894,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c5fcbbfa2181a44cbda786c0ac8f66b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnAnyTriggerZoneEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1370666583}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: TriggerTutorialFightStart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1967251569
 GameObject:
   m_ObjectHideFlags: 0
@@ -15931,5 +15954,6 @@ SceneRoots:
   - {fileID: 163277673}
   - {fileID: 1167376779}
   - {fileID: 1527217929}
+  - {fileID: 1926930505}
   - {fileID: 799627491}
   - {fileID: 808217964}

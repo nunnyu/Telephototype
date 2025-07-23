@@ -1,9 +1,10 @@
 using UnityEngine;
 using System;
+using UnityEngine.Events;
 
 public class TriggerEventZone : MonoBehaviour
 {
-    public static event Action OnAnyTriggerZoneEntered; // Re-work this with Unity Events
+    public UnityEvent OnAnyTriggerZoneEntered; 
     private bool triggered = false;
 
     void OnTriggerEnter2D(Collider2D other)
