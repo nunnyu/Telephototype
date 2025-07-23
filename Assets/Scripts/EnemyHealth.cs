@@ -26,6 +26,11 @@ public class EnemyHealth : MonoBehaviour
         }
     }
 
+    public int GetHealth()
+    {
+        return health;
+    }
+
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "CameraFlash")
@@ -71,7 +76,6 @@ public class EnemyHealth : MonoBehaviour
         {
             Invoke("Die", .5f);
         }
-
     }
 
     void Die()

@@ -42,9 +42,10 @@ public class HanekoBehavior : MonoBehaviour
     void Update()
     {
         int healthNum = health.GetHealth();
-        if (healthNum == 0)
+        if (healthNum == 0 && Attacking)
         {
             GameManager.Instance.TriggerTutorialFightEnd();
+            Debug.Log("Triggering end of tutorial.");
         }
 
         Debug.Log("Attacking: " + Attacking);
