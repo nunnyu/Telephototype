@@ -102,7 +102,7 @@ public class EnemyHealth : MonoBehaviour
         {
             if (child.tag != "Shadow")
             {
-                child.gameObject.GetComponent<SpriteRenderer>().color = Color.Lerp(sr.color, originalColor, colorLerpSpeed);
+                child.gameObject.GetComponent<SpriteRenderer>().color = Color.Lerp(sr.color, originalColor, colorLerpSpeed * Time.deltaTime);
             }
         }
 

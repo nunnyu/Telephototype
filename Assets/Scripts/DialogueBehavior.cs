@@ -4,25 +4,48 @@ using UnityEngine;
 
 public class DialogueBehavior : MonoBehaviour
 {
+    [Header("A global dialogue just happens - no colliders, so these should be instantiated by an object.")]
+    [SerializeField] private bool global = false;
+
+    [Header("Should this dialogue be destroyed after reading it?")]
     [SerializeField] private bool toDestroy = true;
+
+    [Header("Automatically close this dialogue after a bit?")]
     [SerializeField] private bool automaticDestruction = false;
+
+    [Header("Customize icons & text")]
     [SerializeField] private Dialogue[] dialogues;
     private int current;
     private bool inDialogue = false;
 
-    void OnTriggerEnter2D(Collider2D other)
+    void HandleDialogue(Collider2D other)
     {
-        inDialogue = true;
-        current = 0;
         if (other.tag == "Player")
         {
+            inDialogue = true;
+            current = 0;
             DialogueManager.ShowDialogue = true;
             SetDialogue();
         }
     }
 
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (!global)
+            HandleDialogue(other);
+    }
+
     void Start()
     {
+        current = 0;
+
+        if (global)
+        {
+            // We don't really care about collisions we are just showing a dialogue because something happened.
+            inDialogue = true;
+            SetDialogue();
+        }
+
         if (automaticDestruction)
         {
             FindFirstObjectByType<DialogueManager>().DelayedDestruction(1);
@@ -37,9 +60,15 @@ public class DialogueBehavior : MonoBehaviour
 
     void Update()
     {
+        Debug.Log(inDialogue);
+
         if (inDialogue)
         {
-            if (Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown(KeyCode.Space))
+            // There was this ugly annoying bug, where automatic destruction makes 
+            // walking into another dialogue really funky - as it tries to hide it in the middle of 
+            // your new dialogue. 
+            DialogueManager.ShowDialogue = true;
+            if (Input.GetKeyDown(KeyCode.Z) && !automaticDestruction)
             {
                 current++;
                 if (current == dialogues.Length)

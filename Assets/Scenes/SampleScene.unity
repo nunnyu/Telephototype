@@ -1110,6 +1110,7 @@ MonoBehaviour:
   lowestDelay: 3
   highestDelay: 5
   health: {fileID: 367568652}
+  endDialogue: {fileID: 432045308560475119, guid: 5693c4bc0fee3d84b8dd5fe7e96da5b5, type: 3}
 --- !u!1 &172579519
 GameObject:
   m_ObjectHideFlags: 0
@@ -3156,10 +3157,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 144bd69e12f7a3940ab4f9f6d461bca0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 3
-  colorLerpSpeed: 0.2
+  health: 5
+  colorLerpSpeed: 0.05
   sr: {fileID: 367568648}
-  targetColor: {r: 255, g: 255, b: 255, a: 1}
+  targetColor: {r: 0.8679245, g: 0.98481894, b: 1, a: 1}
   noEffectText: {fileID: 8039130890684001302, guid: 085bd611ae56dbf42a3072904d38220e, type: 3}
 --- !u!61 &367568653
 BoxCollider2D:
@@ -3873,6 +3874,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39e54484fbe20c54fa46d390e65125e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  global: 0
   toDestroy: 1
   automaticDestruction: 0
   dialogues:
@@ -6165,6 +6167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39e54484fbe20c54fa46d390e65125e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  global: 0
   toDestroy: 1
   automaticDestruction: 0
   dialogues:
@@ -9331,7 +9334,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &799627491
 Transform:
   m_ObjectHideFlags: 0
@@ -10087,6 +10090,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39e54484fbe20c54fa46d390e65125e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  global: 0
   toDestroy: 1
   automaticDestruction: 0
   dialogues:
@@ -11270,6 +11274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39e54484fbe20c54fa46d390e65125e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  global: 0
   toDestroy: 0
   automaticDestruction: 0
   dialogues:
@@ -12566,10 +12571,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39e54484fbe20c54fa46d390e65125e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  global: 0
   toDestroy: 1
   automaticDestruction: 0
   dialogues:
-  - text: your name is Rinko. correct?
+  - text: your name is RINKO. correct?
     sprite: {fileID: 6485290393343850530, guid: 3c5a06f19a7f5e947a8fd7961e028425, type: 3}
   - text: umm i don't know
     sprite: {fileID: -2795693140052960006, guid: ae955fb2a1ab10d429af77b34245a8f5, type: 3}
@@ -13920,6 +13926,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39e54484fbe20c54fa46d390e65125e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  global: 0
   toDestroy: 1
   automaticDestruction: 0
   dialogues:

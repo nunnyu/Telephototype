@@ -7,6 +7,7 @@ public class HanekoBehavior : MonoBehaviour
     [SerializeField] private float lowestDelay = 3f;
     [SerializeField] private float highestDelay = 5f;
     [SerializeField] private EnemyHealth health;
+    [SerializeField] private GameObject endDialogue;
     private bool Attacking = false;
     private bool isAttackingCoroutineRunning = false;
 
@@ -46,6 +47,7 @@ public class HanekoBehavior : MonoBehaviour
         {
             GameManager.Instance.TriggerTutorialFightEnd();
             Debug.Log("Triggering end of tutorial.");
+            StartCoroutine(SpawnWithDelay(2));
         }
 
         Debug.Log("Attacking: " + Attacking);
@@ -54,6 +56,13 @@ public class HanekoBehavior : MonoBehaviour
             StartCoroutine(RandomAttackLoop());
         }
     }
+
+    IEnumerator SpawnWithDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        Instantiate(endDialogue, transform.position, Quaternion.identity, null);
+    }
+
 
     IEnumerator RandomAttackLoop()
     {

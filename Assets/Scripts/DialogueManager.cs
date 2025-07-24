@@ -30,6 +30,7 @@ public class DialogueManager : MonoBehaviour
         Invoke("HideDialogue", delay);
     }
 
+    // No references, but invoked for delayed destruction 
     void HideDialogue()
     {
         ShowDialogue = false;
@@ -50,16 +51,6 @@ public class DialogueManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // For Testing Purposes
-        // if (Input.GetKeyDown(KeyCode.G))
-        // {
-        //     ShowDialogue = true;
-        // }
-        // if (Input.GetKeyDown(KeyCode.H) || Input.GetKeyDown(KeyCode.Z))
-        // {
-        //     ShowDialogue = false;
-        // }
-        
         dialogueBox.transform.position = Vector3.Lerp(dialogueBox.transform.position, targetPos, speed * Time.deltaTime);
 
         if (ShowDialogue)
