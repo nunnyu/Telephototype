@@ -47,7 +47,7 @@ public class HanekoBehavior : MonoBehaviour
         {
             GameManager.Instance.TriggerTutorialFightEnd();
             Debug.Log("Triggering end of tutorial.");
-            StartCoroutine(SpawnWithDelay(2));
+            StartCoroutine(SpawnEndWithDelay(2));
         }
 
         Debug.Log("Attacking: " + Attacking);
@@ -57,7 +57,7 @@ public class HanekoBehavior : MonoBehaviour
         }
     }
 
-    IEnumerator SpawnWithDelay(float delay)
+    IEnumerator SpawnEndWithDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
         Instantiate(endDialogue, transform.position, Quaternion.identity, null);

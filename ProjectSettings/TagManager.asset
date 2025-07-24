@@ -49,5 +49,8 @@ TagManager:
   - name: Ignore Flash
     uniqueID: 2284595025
     locked: 0
+  - name: UI
+    uniqueID: 3531857049
+    locked: 0
   m_RenderingLayers:
   - Default

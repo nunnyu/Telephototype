@@ -5,6 +5,7 @@ public class YonakiAttackBehavior : MonoBehaviour
     [SerializeField] private float rotationSpeed = 5f;
     [SerializeField] private float speed = 5f;
     private Transform target;
+    private Vector2 direction;
 
     // Update is called once per frame
     void Update()
@@ -13,7 +14,11 @@ public class YonakiAttackBehavior : MonoBehaviour
 
         if (target == null) return;
 
-        Vector2 direction = (target.position - transform.position).normalized;
+        if (direction == null)
+        {
+            Destroy(gameObject);
+        }
+
         transform.position += (Vector3)(direction * speed * Time.deltaTime);
     }
 
@@ -30,7 +35,10 @@ public class YonakiAttackBehavior : MonoBehaviour
             target = GameObject.FindGameObjectWithTag("CameraPoses").transform;
         }
 
-        Invoke("Destroy", 2); // so the rocks don't fly away forever 
+        // We need to do this after we find the player
+        direction = (target.position - transform.position).normalized;
+
+        Invoke("Destroy", 10); // so the rocks don't fly away forever 
     }
 
     void Destroy()
