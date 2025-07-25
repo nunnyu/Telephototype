@@ -1,14 +1,12 @@
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
-public class EnemyHealth : MonoBehaviour
+public class PlayerHealth : MonoBehaviour
 {
     [SerializeField] private int health = 3;
     [SerializeField] private float colorLerpSpeed = .05f;
     [SerializeField] private SpriteRenderer sr;
     [SerializeField] private Color targetColor = new Color(255, 255, 255);
-    [SerializeField] private GameObject noEffectText;
     private Color originalColor;
     private List<Transform> children;
     private bool canBeDamaged = false;
@@ -16,13 +14,21 @@ public class EnemyHealth : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        canBeDamaged = true;
         originalColor = sr.color;
 
         children = new List<Transform>();
 
         foreach (Transform child in gameObject.transform)
         {
-            children.Add(child);
+            if (child.tag == "Parent")
+            {
+                children.Add(child.transform.GetChild(0));
+            }
+            else
+            {
+                children.Add(child);
+            }
         }
     }
 
@@ -33,7 +39,7 @@ public class EnemyHealth : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "CameraFlash")
+        if (other.tag == "EnemyAttack")
         {
             if (canBeDamaged)
             {
@@ -41,20 +47,9 @@ public class EnemyHealth : MonoBehaviour
                 Invoke("ResetVulnerability", 1f); // Basically so they don't die in 1 hit.
                 TakeDamage();
             }
-            else
-            {
-                // "No Effect!" 
-                Instantiate(noEffectText,
-                    new Vector3(transform.position.x, transform.position.y - 1, transform.position.z),
-                    Quaternion.identity);
-                // You got the hit, but the enemy isn't vulnerable. 
-            }
-        }
-    }
 
-    void ResetVulnerability()
-    {
-        canBeDamaged = true;
+            Destroy(other);
+        }
     }
 
     public void TakeDamage()
@@ -63,7 +58,7 @@ public class EnemyHealth : MonoBehaviour
         sr.color = targetColor;
         foreach (Transform child in children)
         {
-            if (child.tag != "Shadow")
+            if (child.tag != "Shadow" && child.tag != "Parent")
             {
                 child.gameObject.GetComponent<SpriteRenderer>().color = targetColor;
             }
@@ -83,38 +78,26 @@ public class EnemyHealth : MonoBehaviour
         Destroy(gameObject);
     }
 
+    void ResetVulnerability()
+    {
+        canBeDamaged = true;
+    }
+
     // Update is called once per frame
     void Update()
     {
-        var attackScript = transform.GetComponent<EnemyAttack>();
-        if (attackScript == null)
-        {
-            attackScript = transform.parent.GetComponent<EnemyAttack>();
-        }
-
-        // "Vulnerable during attack" logic
-        if (attackScript.IsAttacking)
-        {
-            canBeDamaged = true;
-        }
-        else
-        {
-            canBeDamaged = false;
-        }
-
         sr.color = Color.Lerp(sr.color, originalColor, colorLerpSpeed);
 
         foreach (Transform child in children)
         {
             if (child.tag != "Shadow")
             {
-                child.gameObject.GetComponent<SpriteRenderer>().color = Color.Lerp(sr.color, originalColor, colorLerpSpeed * Time.deltaTime);
+                var sr = child.gameObject.GetComponent<SpriteRenderer>();
+                if (sr)
+                {
+                    sr.color = Color.Lerp(sr.color, originalColor, colorLerpSpeed * Time.deltaTime);
+                }
             }
         }
-
-        // if (Input.GetKeyDown(KeyCode.G))
-        // {
-        //     TakeDamage();
-        // }
     }
 }

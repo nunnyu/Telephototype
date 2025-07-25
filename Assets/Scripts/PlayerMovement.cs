@@ -169,6 +169,12 @@ public class PlayerMovement : MonoBehaviour
         {
             lastNonZeroInput = input;
         }
+
+        if (lastNonZeroInput.normalized == new Vector2(-1, 0) && DialogueLock)
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+            // ShiftLimbs(false, false);
+        }
     }
 
     void FixedUpdate()

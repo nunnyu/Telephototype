@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4985415250910966318}
   - component: {fileID: 3407981460822701372}
   - component: {fileID: 3379624533895711979}
+  - component: {fileID: -7499942018577343847}
   m_Layer: 0
   m_Name: parried
   m_TagString: Untagged
@@ -192,3 +193,15 @@ MonoBehaviour:
   fadeDuration: 1
   bounceHeight: 0.1
   bounceSpeed: 0.1
+--- !u!210 &-7499942018577343847
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8039130890684001302}
+  m_Enabled: 1
+  m_SortingLayerID: -763110247
+  m_SortingLayer: 2
+  m_SortingOrder: 100
+  m_SortAtRoot: 0
