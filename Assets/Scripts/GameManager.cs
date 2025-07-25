@@ -5,9 +5,10 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
 
+    public Vector2 rinkoSpawn = new Vector2(0, -2);
     public UnityEvent OnTutorialFightStart;
     public UnityEvent OnTutorialFightEnd;
-
+    public UnityEvent OnReset; // for when the player dies, or they go back a save point
     public bool IsTutorialFightActive { get; private set; } = false;
 
     void Update()
@@ -25,8 +26,26 @@ public class GameManager : MonoBehaviour
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
+
+        OnReset.AddListener(ResetSpirits);
     }
 
+    public void TriggerReset()
+    {
+        Debug.Log("RESETTING WORLD");
+        OnReset?.Invoke();
+    }
+
+    void ResetSpirits()
+    {
+        var spirits = GameObject.FindGameObjectsWithTag("Spirit");
+        foreach (var spirit in spirits)
+        {
+            spirit.SetActive(true);
+        }
+    }
+
+    // This is referenced by a trigger event zone object
     public void TriggerTutorialFightStart()
     {
         Debug.Log("Fight starts.");

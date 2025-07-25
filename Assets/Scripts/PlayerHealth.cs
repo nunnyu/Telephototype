@@ -7,13 +7,16 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private float colorLerpSpeed = .05f;
     [SerializeField] private SpriteRenderer sr;
     [SerializeField] private Color targetColor = new Color(255, 255, 255);
+    [SerializeField] private float deathDelay = 0.5f;
     private Color originalColor;
     private List<Transform> children;
     private bool canBeDamaged = false;
+    private int startingHealth;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        startingHealth = health;
         canBeDamaged = true;
         originalColor = sr.color;
 
@@ -30,6 +33,22 @@ public class PlayerHealth : MonoBehaviour
                 children.Add(child);
             }
         }
+
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.OnReset.AddListener(ReturnToPoint);
+            GameManager.Instance.OnReset.AddListener(ResetHealth);
+        }
+    }
+
+    void ReturnToPoint()
+    {
+        transform.position = FindAnyObjectByType<GameManager>().rinkoSpawn;
+    }
+
+    void ResetHealth()
+    {
+        health = startingHealth;
     }
 
     public int GetHealth()
@@ -69,13 +88,13 @@ public class PlayerHealth : MonoBehaviour
 
         if (health == 0)
         {
-            Invoke("Die", .5f);
+            Invoke("Die", deathDelay);
         }
     }
 
     void Die()
     {
-        Destroy(gameObject);
+        GameManager.Instance.TriggerReset();
     }
 
     void ResetVulnerability()
@@ -86,18 +105,27 @@ public class PlayerHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        sr.color = Color.Lerp(sr.color, originalColor, colorLerpSpeed);
+        sr.color = Color.Lerp(sr.color, originalColor, colorLerpSpeed * Time.deltaTime);
 
         foreach (Transform child in children)
         {
             if (child.tag != "Shadow")
             {
-                var sr = child.gameObject.GetComponent<SpriteRenderer>();
-                if (sr)
+                // Fun fact, for like 20 minutes I couldn't figure out why this didn't work
+                // and it's because I had csr named sr. 
+                var csr = child.gameObject.GetComponent<SpriteRenderer>();
+                if (csr)
                 {
-                    sr.color = Color.Lerp(sr.color, originalColor, colorLerpSpeed * Time.deltaTime);
+                    csr.color = Color.Lerp(csr.color, originalColor, colorLerpSpeed * Time.deltaTime);
                 }
             }
+        }
+
+        Debug.Log(children.Count);
+
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            TakeDamage();
         }
     }
 }

@@ -101,8 +101,3 @@ MonoBehaviour:
     sprite: {fileID: -2795693140052960006, guid: ae955fb2a1ab10d429af77b34245a8f5, type: 3}
   - text: yep-noko
     sprite: {fileID: 6485290393343850530, guid: 3c5a06f19a7f5e947a8fd7961e028425, type: 3}
-  - text: 'can you tell me more, now? what am i supposed to do? '
-    sprite: {fileID: -2795693140052960006, guid: ae955fb2a1ab10d429af77b34245a8f5, type: 3}
-  - text: erm-noko... i already told you everything i know, you didn't need to capture
-      me... but now that you did, i can give you more advice-noko.
-    sprite: {fileID: 6485290393343850530, guid: 3c5a06f19a7f5e947a8fd7961e028425, type: 3}

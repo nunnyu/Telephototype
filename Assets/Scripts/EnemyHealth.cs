@@ -9,13 +9,16 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] private SpriteRenderer sr;
     [SerializeField] private Color targetColor = new Color(255, 255, 255);
     [SerializeField] private GameObject noEffectText;
+    [SerializeField] private float deathDelay = 0.5f;
     private Color originalColor;
     private List<Transform> children;
     private bool canBeDamaged = false;
+    private int originalHealth;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        originalHealth = health;
         originalColor = sr.color;
 
         children = new List<Transform>();
@@ -24,6 +27,16 @@ public class EnemyHealth : MonoBehaviour
         {
             children.Add(child);
         }
+
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.OnReset.AddListener(ResetHealth);
+        }
+    }
+
+    void ResetHealth()
+    {
+        health = originalHealth;
     }
 
     public int GetHealth()
@@ -74,13 +87,13 @@ public class EnemyHealth : MonoBehaviour
 
         if (health == 0)
         {
-            Invoke("Die", .5f);
+            Invoke("Die", deathDelay);
         }
     }
 
     void Die()
     {
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -102,7 +115,7 @@ public class EnemyHealth : MonoBehaviour
             canBeDamaged = false;
         }
 
-        sr.color = Color.Lerp(sr.color, originalColor, colorLerpSpeed);
+        sr.color = Color.Lerp(sr.color, originalColor, colorLerpSpeed * Time.deltaTime);
 
         foreach (Transform child in children)
         {
@@ -111,10 +124,5 @@ public class EnemyHealth : MonoBehaviour
                 child.gameObject.GetComponent<SpriteRenderer>().color = Color.Lerp(sr.color, originalColor, colorLerpSpeed * Time.deltaTime);
             }
         }
-
-        // if (Input.GetKeyDown(KeyCode.G))
-        // {
-        //     TakeDamage();
-        // }
     }
 }
