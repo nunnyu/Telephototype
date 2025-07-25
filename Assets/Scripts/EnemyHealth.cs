@@ -58,7 +58,7 @@ public class EnemyHealth : MonoBehaviour
             {
                 // "No Effect!" 
                 Instantiate(noEffectText,
-                    new Vector3(transform.position.x, transform.position.y - 1, transform.position.z),
+                    new Vector3(transform.position.x, transform.position.y - 1.5f, transform.position.z),
                     Quaternion.identity);
                 // You got the hit, but the enemy isn't vulnerable. 
             }

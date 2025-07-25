@@ -41,10 +41,11 @@ public class MasterAnimationController : MonoBehaviour
         }
     }
 
+    // ??? why did you name this Method sob 
     private void Method()
     {
         var animator = GetComponent<Animator>();
-        if (animator.GetBool("attacking")) 
+        if (animator.GetBool("attacking"))
         {
             GoBackToDefault();
         }
