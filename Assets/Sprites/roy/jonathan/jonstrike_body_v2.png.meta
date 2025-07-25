@@ -1,0 +1,341 @@
+fileFormatVersion: 2
+guid: 11fd56c664851d74d859f07767e7ccd1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3476955235419270486
+    second: jonstrike_body_v2_0
+  - first:
+      213: -5450471367027802873
+    second: jonstrike_body_v2_1
+  - first:
+      213: -2530987079668998215
+    second: jonstrike_body_v2_2
+  - first:
+      213: -4678026368335410989
+    second: jonstrike_body_v2_3
+  - first:
+      213: -7862212442196847957
+    second: jonstrike_body_v2_4
+  - first:
+      213: -9071227497625801880
+    second: jonstrike_body_v2_5
+  - first:
+      213: 9005194385147526834
+    second: jonstrike_body_v2_6
+  - first:
+      213: 2774917334665544366
+    second: jonstrike_body_v2_7
+  - first:
+      213: 7927821552108904064
+    second: jonstrike_body_v2_8
+  - first:
+      213: -527822178765148326
+    second: jonstrike_body_v2_9
+  - first:
+      213: 4337718138002645979
+    second: jonstrike_body_v2_10
+  - first:
+      213: -6219165429978303545
+    second: jonstrike_body_v2_11
+  - first:
+      213: -8840724203940982801
+    second: jonstrike_body_v2_12
+  - first:
+      213: 5880504067952935762
+    second: jonstrike_body_v2_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: jonstrike_body_v2_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 2
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa256e492af5fbfc0800000000000000
+      internalID: -3476955235419270486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jonstrike_body_v2_1
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 2
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70dbed56b290c54b0800000000000000
+      internalID: -5450471367027802873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jonstrike_body_v2_2
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 2
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bfd93929a020ecd0800000000000000
+      internalID: -2530987079668998215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jonstrike_body_v2_3
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d80571adcf441fb0800000000000000
+      internalID: -4678026368335410989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jonstrike_body_v2_4
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 2
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba2533a807fc3e290800000000000000
+      internalID: -7862212442196847957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jonstrike_body_v2_7
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 2
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea240dd1d9c728620800000000000000
+      internalID: 2774917334665544366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jonstrike_body_v2_14
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 2
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa413925fac7475498bc93b036a34731
+      internalID: -1669598158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0f7a2cd453d3a144cb4134f4922243ae
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      jonstrike_body_v2_0: -3476955235419270486
+      jonstrike_body_v2_1: -5450471367027802873
+      jonstrike_body_v2_10: 4337718138002645979
+      jonstrike_body_v2_11: -6219165429978303545
+      jonstrike_body_v2_12: -8840724203940982801
+      jonstrike_body_v2_13: 5880504067952935762
+      jonstrike_body_v2_14: -1669598158
+      jonstrike_body_v2_2: -2530987079668998215
+      jonstrike_body_v2_3: -4678026368335410989
+      jonstrike_body_v2_4: -7862212442196847957
+      jonstrike_body_v2_5: -9071227497625801880
+      jonstrike_body_v2_6: 9005194385147526834
+      jonstrike_body_v2_7: 2774917334665544366
+      jonstrike_body_v2_8: 7927821552108904064
+      jonstrike_body_v2_9: -527822178765148326
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
