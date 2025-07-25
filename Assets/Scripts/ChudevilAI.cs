@@ -4,15 +4,12 @@ using UnityEngine;
 public class ChudevilAI : MonoBehaviour
 {
     [SerializeField] private float detectionRadius = 3f;
-    [SerializeField] private Vector2 detectionOffset = new Vector2(0, 0);
-    [SerializeField] private float lowestDelay = 3f;
-    [SerializeField] private float highestDelay = 4f;
+    [SerializeField] private Vector2 detectionAreaPos = new Vector2(0, 0);
     private bool attacking = false;
 
     bool PlayerInRange()
     {
-        Vector2 center = new Vector2(transform.position.x + detectionOffset.x, transform.position.y + detectionOffset.y);
-        Collider2D[] hits = Physics2D.OverlapCircleAll(center, detectionRadius);
+        Collider2D[] hits = Physics2D.OverlapCircleAll(detectionAreaPos, detectionRadius);
 
         foreach (Collider2D hit in hits)
         {
@@ -36,15 +33,13 @@ public class ChudevilAI : MonoBehaviour
         {
             attacking = true;
         }
-        else
-        {
-            attacking = false;
-        }
+        
+        GetComponent<EnemyAttack>().IsAttacking = attacking;
     }
 
     void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(new Vector2(transform.position.x + detectionOffset.x, transform.position.y + detectionOffset.y), detectionRadius);
+        Gizmos.DrawWireSphere(detectionAreaPos, detectionRadius);
     }
 }

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class alertSwitch : MonoBehaviour
+public class AlertSwitch : MonoBehaviour
 {
     public Animator chudevilAnimator;
     public string alertTrigger = "Alert";

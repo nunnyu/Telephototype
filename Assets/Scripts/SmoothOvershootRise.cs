@@ -4,12 +4,13 @@ public class SmoothOvershootRise : MonoBehaviour
 {
     [Header("Left Sprite")]
     public GameObject leftAnim;
-    
+
     [Header("Idle Sprite")]
     public GameObject idleChud;
 
     [Header("Right Sprite")]
     public GameObject rightAnim;
+
     [Header("Target Settings")]
     public Transform target;
     private Vector3 approachStart;
@@ -42,32 +43,41 @@ public class SmoothOvershootRise : MonoBehaviour
     [Header("idle/attack animatore")]
     public Animator childAnimator;
     public string alartparamatar = "alert";
+
+    private Vector2 startPos;
+
     void Start()
     {
+        startPos = transform.position;
+        riseStart = transform.position;
         if (target) targetPoint = target.position;
     }
 
     void Update()
     {
         if (childAnimator.GetBool(alartparamatar)) return;
+        target = GetComponent<EnemyAttack>().GetTarget();
         if (target == null) return;
 
-        if (!isApproaching && !isOvershooting && !isRising)
+        if (GetComponent<EnemyAttack>().IsAttacking)
         {
-            InitializeApproach();
-        }
+            if (!isApproaching && !isOvershooting && !isRising)
+            {
+                InitializeApproach();
+            }
 
-        if (isApproaching)
-        {
-            HandleApproach();
-        }
-        else if (isOvershooting)
-        {
-            HandleOvershoot();
-        }
-        else if (isRising)
-        {
-            HandleRise();
+            if (isApproaching)
+            {
+                HandleApproach();
+            }
+            else if (isOvershooting)
+            {
+                HandleOvershoot();
+            }
+            else if (isRising)
+            {
+                HandleRise();
+            }
         }
     }
 
@@ -91,7 +101,7 @@ public class SmoothOvershootRise : MonoBehaviour
         targetPoint = target.position;
         isApproaching = true;
         currentSpeed = 0f;
-        
+
         // Calculate dynamic overshoot based on approach speed
         float speedRatio = Mathf.InverseLerp(0, maxSpeed, currentSpeed);
         actualOvershoot = Mathf.Lerp(minOvershootDistance, maxOvershootDistance, speedRatio);
@@ -133,7 +143,8 @@ public class SmoothOvershootRise : MonoBehaviour
     {
         leftAnim.SetActive(false);
         idleChud.SetActive(true);
-        rightAnim.SetActive(false); 
+        rightAnim.SetActive(false);
+
         // Smooth rise with easing
         riseProgress = Mathf.Min(riseProgress + Time.deltaTime / riseDuration, 1f);
         float easedProgress = EaseOutQuad(riseProgress);

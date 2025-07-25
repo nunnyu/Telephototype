@@ -52,6 +52,14 @@ public class OnPicture : MonoBehaviour
 
             Destroy(other.gameObject);
         }
+
+        if (other.tag == "MeleeAttack")
+        {
+            Instantiate(parryText,
+                new Vector3(transform.position.x, transform.position.y - 2, transform.position.z),
+                Quaternion.identity);
+            // We need to make sure the player knows they are invulnerable during wind-up! 
+        }
     }
 
     // Update is called once per frame

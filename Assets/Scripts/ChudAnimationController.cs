@@ -2,9 +2,10 @@ using UnityEngine;
 
 public class ChudAnimationController : MonoBehaviour
 {
-     [Header("Left Sprite")]
+    [Header("This script is for testing purposes only")]
+    [Header("Left Sprite")]
     public GameObject leftAnim;
-    
+
     [Header("Idle Sprite")]
     public GameObject idleChud;
 
@@ -20,7 +21,7 @@ public class ChudAnimationController : MonoBehaviour
     {
         leftAnim.SetActive(false);
         idleChud.SetActive(true);
-        rightAnim.SetActive(false);  
+        rightAnim.SetActive(false);
     }
     void Update()
     {
@@ -36,14 +37,14 @@ public class ChudAnimationController : MonoBehaviour
         {
             leftAnim.SetActive(false);
             idleChud.SetActive(true);
-            rightAnim.SetActive(false);        
+            rightAnim.SetActive(false);
         }
         else if (Input.GetKeyDown(rightKey))
         {
             leftAnim.SetActive(false);
             idleChud.SetActive(false);
-            rightAnim.SetActive(true);       
+            rightAnim.SetActive(true);
         }
     }
-  
+
 }

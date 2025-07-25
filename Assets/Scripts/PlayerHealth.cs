@@ -58,7 +58,7 @@ public class PlayerHealth : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "EnemyAttack")
+        if (other.tag == "EnemyAttack" || other.tag == "MeleeAttack")
         {
             if (canBeDamaged)
             {
@@ -66,8 +66,6 @@ public class PlayerHealth : MonoBehaviour
                 Invoke("ResetVulnerability", 1f); // Basically so they don't die in 1 hit.
                 TakeDamage();
             }
-
-            Destroy(other);
         }
     }
 

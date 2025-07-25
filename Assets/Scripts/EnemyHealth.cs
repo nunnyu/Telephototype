@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour
 {
     [SerializeField] private int health = 3;
-    [SerializeField] private float colorLerpSpeed = .05f;
+    [SerializeField] private float colorLerpSpeed = 2f;
     [SerializeField] private SpriteRenderer sr;
     [SerializeField] private Color targetColor = new Color(255, 255, 255);
     [SerializeField] private GameObject noEffectText;
@@ -99,7 +99,7 @@ public class EnemyHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        var attackScript = transform.GetComponent<EnemyAttack>();
+        EnemyAttack attackScript = transform.GetComponent<EnemyAttack>();
         if (attackScript == null)
         {
             attackScript = transform.parent.GetComponent<EnemyAttack>();

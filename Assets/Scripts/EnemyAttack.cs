@@ -4,16 +4,16 @@ public class EnemyAttack : MonoBehaviour
 {
     [Header("Bounce Effect Parameters")]
     [SerializeField] public float bounceScaleDown = .1f;
-    // [SerializeField] public float bounceInitialPos = .1f;
     [SerializeField] private float lerpSpeed = 1f;
 
-    [Header("Attack")]
+    [Header("Attack & Auto-Attack Parameters")]
+    [SerializeField] private bool isAutoAttack = true;
     [SerializeField] private Transform target;
     [SerializeField] private float distanceFromEnemy = 1f;
     [SerializeField] private float attackDelay = .66f;
     [SerializeField] private GameObject attackObj;
     [SerializeField] private float vulnerableLength = 1f;
-    public bool IsAttacking { get; private set; }
+    public bool IsAttacking { get; set; }
     private Vector3 targetScale;
     private Vector3 targetPos;
 
@@ -23,7 +23,7 @@ public class EnemyAttack : MonoBehaviour
         targetPos = new Vector3(transform.position.x, transform.position.y, transform.position.z);
     }
 
-    public void Attack()
+    public Transform GetTarget()
     {
         var targetObj = GameObject.FindGameObjectWithTag("Player");
 
@@ -36,6 +36,13 @@ public class EnemyAttack : MonoBehaviour
             target = GameObject.FindGameObjectWithTag("CameraPoses").transform;
         }
 
+        return target;
+    }
+
+    public void Attack()
+    {
+        GetTarget();
+
         // Bounce Animation
         transform.localScale = new Vector3(targetScale.x, targetScale.y - bounceScaleDown, transform.localScale.z);
         transform.position = new Vector3(transform.position.x, transform.position.y - bounceScaleDown / 2f, transform.position.z);
@@ -45,14 +52,12 @@ public class EnemyAttack : MonoBehaviour
 
     void Update()
     {
-        // if (Input.GetKeyDown(KeyCode.F))
-        // {
-        //     Attack();
-        // }
-
-        // Bounce animation 
-        transform.localScale = Vector3.Lerp(transform.localScale, targetScale, lerpSpeed * Time.deltaTime);
-        transform.position = Vector3.Lerp(transform.position, targetPos, lerpSpeed * Time.deltaTime);
+        if (isAutoAttack)
+        {
+            // Bounce animation 
+            transform.localScale = Vector3.Lerp(transform.localScale, targetScale, lerpSpeed * Time.deltaTime);
+            transform.position = Vector3.Lerp(transform.position, targetPos, lerpSpeed * Time.deltaTime);
+        }
     }
 
     void ActivateInstance()

@@ -11,6 +11,7 @@ TagManager:
   - TutorialAttack
   - Parent
   - Spirit
+  - MeleeAttack
   layers:
   - Default
   - TransparentFX

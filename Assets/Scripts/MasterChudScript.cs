@@ -1,5 +1,7 @@
 using UnityEngine;
 
+// Pretty sure this script does literally nothing, but I'm not going to delete it. 
+
 [System.Serializable]
 public class BodyPartAnimators
 {
