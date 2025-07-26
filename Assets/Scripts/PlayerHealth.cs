@@ -12,10 +12,13 @@ public class PlayerHealth : MonoBehaviour
     private List<Transform> children;
     private bool canBeDamaged = false;
     private int startingHealth;
+    private bool picPossible = true; // Corny flag for CanTakePic, we want it toggled, as we shouldn't take a picture
+    // while taking damage 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        picPossible = true;
         startingHealth = health;
         canBeDamaged = true;
         originalColor = sr.color;
@@ -81,6 +84,9 @@ public class PlayerHealth : MonoBehaviour
             }
         }
 
+        picPossible = false;
+        Invoke("CanTakePic", 1);
+
         // Health logic
         health--;
 
@@ -88,6 +94,11 @@ public class PlayerHealth : MonoBehaviour
         {
             Invoke("Die", deathDelay);
         }
+    }
+
+    void CanTakePic()
+    {
+        picPossible = true;
     }
 
     void Die()
@@ -103,6 +114,8 @@ public class PlayerHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+        TakePicture.CanTakePicture = picPossible;
         sr.color = Color.Lerp(sr.color, originalColor, colorLerpSpeed * Time.deltaTime);
 
         foreach (Transform child in children)

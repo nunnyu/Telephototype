@@ -17,7 +17,6 @@ public class TextBehavior : MonoBehaviour
         textMesh = GetComponent<TextMeshPro>();
         startColor = textMesh.color;
     }
-
     void Update()
     {
         transform.position = startPos + new Vector3(0, Mathf.PingPong(Time.time * bounceSpeed, bounceHeight), 0);

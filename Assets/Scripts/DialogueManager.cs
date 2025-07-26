@@ -7,6 +7,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] public GameObject dialogueBox;
     [SerializeField] private GameObject text;
     [SerializeField] private Image icon;
+    [SerializeField] private AudioClip clip;
     [SerializeField] private float speed = 5f;
     [SerializeField] private float hidePositionOffset = -300;
     [SerializeField] private float shownPositionOffset = 50;
@@ -14,6 +15,7 @@ public class DialogueManager : MonoBehaviour
     private Vector3 hidePosition;
     private Vector3 shownPosition;
     public static bool ShowDialogue;
+    private bool playingAudio = false;
 
     public void SetText(string txt)
     {
@@ -23,6 +25,11 @@ public class DialogueManager : MonoBehaviour
     public void SetSprite(Sprite sprite)
     {
         icon.sprite = sprite;
+    }
+
+    public void SetAudio(AudioClip clip)
+    {
+        this.clip = clip;
     }
 
     public void DelayedDestruction(float delay)
@@ -58,12 +65,24 @@ public class DialogueManager : MonoBehaviour
             targetPos = shownPosition;
             PlayerMovement.DialogueLock = true;
             TakePicture.CanTakePicture = false;
+            if (!playingAudio)
+            {
+                PlayClip();
+                playingAudio = true;
+            }
         }
         else
         {
             TakePicture.CanTakePicture = true;
             PlayerMovement.DialogueLock = false;
             targetPos = hidePosition;
+            playingAudio = false;
         }
+    }
+
+    public void PlayClip()
+    {
+        GetComponent<AudioSource>().clip = clip;
+        GetComponent<AudioSource>().Play();
     }
 }

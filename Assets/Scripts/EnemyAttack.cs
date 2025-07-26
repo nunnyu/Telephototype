@@ -17,6 +17,19 @@ public class EnemyAttack : MonoBehaviour
     private Vector3 targetScale;
     private Vector3 targetPos;
 
+    void Start()
+    {
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.OnReset.AddListener(Reset);
+        }
+    }
+
+    void Reset()
+    {
+        target = null;
+    }
+
     void Awake()
     {
         targetScale = transform.localScale;

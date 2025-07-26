@@ -56,6 +56,7 @@ public class DialogueBehavior : MonoBehaviour
     {
         FindFirstObjectByType<DialogueManager>().SetText(dialogues[current].text);
         FindFirstObjectByType<DialogueManager>().SetSprite(dialogues[current].sprite);
+        FindFirstObjectByType<DialogueManager>().SetAudio(dialogues[current].audio);
     }
 
     void Update()
@@ -77,6 +78,7 @@ public class DialogueBehavior : MonoBehaviour
                     return;
                 }
                 SetDialogue();
+                FindFirstObjectByType<DialogueManager>().PlayClip();
             }
         }
     }

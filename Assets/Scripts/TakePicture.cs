@@ -4,6 +4,7 @@ using UnityEngine;
 public class TakePicture : MonoBehaviour
 {
     [Header("This script should be attached to an empty parent.")]
+    [SerializeField] private float cooldown;
     [SerializeField] private GameObject defaultPose;
     [SerializeField] private GameObject cameraPoseUp;
     [SerializeField] private GameObject cameraPoseDown;
@@ -13,6 +14,9 @@ public class TakePicture : MonoBehaviour
     [Header("Sound")]
     [SerializeField] private AudioClip snapSound;
     [SerializeField] private float soundDelay = .5f;
+
+    [Header("UI")]
+    [SerializeField] private GameObject cameraReadyText;
 
     private GameObject cameraPose;
     private Vector2 lastPosition;
@@ -38,6 +42,8 @@ public class TakePicture : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        Debug.Log(CanTakePicture + ": Can take picture.");
         ChooseCameraPose();
 
         if (Input.GetKeyDown(KeyCode.Space) && CanTakePicture)
@@ -90,7 +96,7 @@ public class TakePicture : MonoBehaviour
 
     void Over()
     {
-        TakingPic = false;
+        Invoke("ResetTakingPic", cooldown);
         cameraPose.SetActive(false);
 
         // Visual bug fix
@@ -99,5 +105,12 @@ public class TakePicture : MonoBehaviour
 
         // Back to default idle pose
         defaultPose.SetActive(true);
+    }
+
+    // This is invoked, to reset after a delay 
+    void ResetTakingPic()
+    {
+        Instantiate(cameraReadyText, new Vector2(lastPosition.x + .66f, lastPosition.y + .5f), Quaternion.identity);
+        TakingPic = false;
     }
 }

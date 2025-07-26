@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.Mathematics;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -10,14 +11,17 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] private Color targetColor = new Color(255, 255, 255);
     [SerializeField] private GameObject noEffectText;
     [SerializeField] private float deathDelay = 0.5f;
+    [SerializeField] private GameObject hitText;
     private Color originalColor;
     private List<Transform> children;
     private bool canBeDamaged = false;
     private int originalHealth;
+    private Vector2 originalPosition;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        originalPosition = transform.position;
         originalHealth = health;
         originalColor = sr.color;
 
@@ -30,13 +34,14 @@ public class EnemyHealth : MonoBehaviour
 
         if (GameManager.Instance != null)
         {
-            GameManager.Instance.OnReset.AddListener(ResetHealth);
+            GameManager.Instance.OnReset.AddListener(Reset);
         }
     }
 
-    void ResetHealth()
+    void Reset()
     {
         health = originalHealth;
+        transform.position = originalPosition;
     }
 
     public int GetHealth()
@@ -72,6 +77,9 @@ public class EnemyHealth : MonoBehaviour
 
     public void TakeDamage()
     {
+        // Hit Text
+        Instantiate(hitText, new Vector2(transform.position.x + .6f, transform.position.y + 0.5f), Quaternion.identity);
+
         // Visuals
         sr.color = targetColor;
         foreach (Transform child in children)

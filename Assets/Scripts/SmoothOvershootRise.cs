@@ -51,6 +51,22 @@ public class SmoothOvershootRise : MonoBehaviour
         startPos = transform.position;
         riseStart = transform.position;
         if (target) targetPoint = target.position;
+
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.OnReset.AddListener(Reset);
+        }
+    }
+
+    void Reset()
+    {
+        leftAnim.SetActive(false);
+        idleChud.SetActive(true);
+        rightAnim.SetActive(false);
+
+        startPos = transform.position;
+        riseStart = transform.position;
+        if (target) targetPoint = target.position;
     }
 
     void Update()

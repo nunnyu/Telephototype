@@ -79,9 +79,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 32767
+  m_SortingLayerID: -763110247
+  m_SortingLayer: 2
+  m_SortingOrder: -32768
   m_Sprite: {fileID: -6029825185793626424, guid: f2ecf449cdf4bcb449f1386f40de6158, type: 3}
   m_Color: {r: 0.54111785, g: 0.6037736, b: 0.6037736, a: 0.45490196}
   m_FlipX: 0
@@ -154,11 +154,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39e54484fbe20c54fa46d390e65125e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  global: 0
   toDestroy: 1
   automaticDestruction: 1
   dialogues:
   - text: i got you-noko!
     sprite: {fileID: 6485290393343850530, guid: 3c5a06f19a7f5e947a8fd7961e028425, type: 3}
+    audio: {fileID: 8300000, guid: 72abe320551d982479edd2e612160aa1, type: 3}
 --- !u!50 &-2048161486119901755
 Rigidbody2D:
   serializedVersion: 5

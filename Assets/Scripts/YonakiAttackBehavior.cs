@@ -38,7 +38,7 @@ public class YonakiAttackBehavior : MonoBehaviour
         // We need to do this after we find the player
         direction = (target.position - transform.position).normalized;
 
-        Invoke("Destroy", 10); // so the rocks don't fly away forever 
+        Invoke("Destroy", 4); // so the rocks don't fly away forever 
     }
 
     void Destroy()
