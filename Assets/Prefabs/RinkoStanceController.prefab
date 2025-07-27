@@ -5306,6 +5306,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b567a80bf2679d4cb586123ccbb845b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cooldown: 1
   defaultPose: {fileID: 5016899065202540204}
   cameraPoseUp: {fileID: 1764150223598726257}
   cameraPoseDown: {fileID: 3673307951544326185}
@@ -5313,6 +5314,7 @@ MonoBehaviour:
   cameraPoseRight: {fileID: 1521520808170387627}
   snapSound: {fileID: 8300000, guid: 25b19cd98ab265d49a6142ca07cedaa9, type: 3}
   soundDelay: 0.65
+  cameraReadyText: {fileID: 8039130890684001302, guid: 191079fae3edfc14aab701ef144dfe1e, type: 3}
 --- !u!82 &4414197028474637201
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5695,6 +5697,7 @@ GameObject:
   - component: {fileID: 7352560936247420739}
   - component: {fileID: 5246569637594143943}
   - component: {fileID: 1791422783907684128}
+  - component: {fileID: 2249437020817112862}
   m_Layer: 0
   m_Name: RinkoSprite
   m_TagString: Player
@@ -5792,8 +5795,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2e08258aa511c34282a3bba7832b581, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  walkingClip1: {fileID: 8300000, guid: 6d57f464a6a984641acd69a3a6a71791, type: 3}
+  walkingClip2: {fileID: 8300000, guid: 8d40ae5d3c7b4f84eaff2b05b5bdf257, type: 3}
+  walkingClip3: {fileID: 8300000, guid: 5013bd450168e814792f5edb6404ef4e, type: 3}
+  audioPlayDelay: 0.1
   rb: {fileID: 1462099713040655632}
-  moveSpeed: 2
+  moveSpeed: 2.2
   scarfBitDisjoint: {x: 0.13, y: 0, z: 0}
   raycastBoxSize: {x: 0.67, y: 1}
   collisionLayerMask:
@@ -5971,6 +5978,103 @@ MonoBehaviour:
   sr: {fileID: 2074929046591154770}
   targetColor: {r: 0.13516822, g: 0.15193595, b: 0.21226418, a: 0.23529412}
   deathDelay: 0.1
+--- !u!82 &2249437020817112862
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5016899065202540204}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.592
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &5383834949859220892
 GameObject:
   m_ObjectHideFlags: 0
@@ -7846,7 +7950,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.046313934, y: 0.13875927}
-  m_ConnectedAnchor: {x: 0.16667676, y: 0.13709259}
+  m_ConnectedAnchor: {x: 0.16667673, y: 0.13709342}
   m_UseConnectedAnchor: 1
   m_UseMotor: 0
   m_Motor:

@@ -8,12 +8,18 @@ public class GameManager : MonoBehaviour
     public Vector2 rinkoSpawn = new Vector2(0, -2);
     public UnityEvent OnTutorialFightStart;
     public UnityEvent OnTutorialFightEnd;
+    public UnityEvent GobblersDefeated;
     public UnityEvent OnReset; // for when the player dies, or they go back a save point
     public bool IsTutorialFightActive { get; private set; } = false;
 
     void Update()
     {
         Debug.Log("Tutorial Fight Active? " + IsTutorialFightActive); // just for testing
+
+        if (GobblerAnimationHandler.gobblerCount == 3)
+        {
+            GobblersDefeated?.Invoke();
+        }
     }
 
     void Awake()

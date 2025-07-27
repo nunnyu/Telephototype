@@ -218,6 +218,7 @@ MonoBehaviour:
   targetColor: {r: 1, g: 1, b: 1, a: 1}
   noEffectText: {fileID: 8039130890684001302, guid: 085bd611ae56dbf42a3072904d38220e, type: 3}
   deathDelay: 0.06
+  hitText: {fileID: 8039130890684001302, guid: 72e89ea96c5096244b4f5f89ef3ee585, type: 3}
 --- !u!50 &4312595277680592179
 Rigidbody2D:
   serializedVersion: 5
