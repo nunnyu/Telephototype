@@ -140,9 +140,9 @@ public class PlayerHealth : MonoBehaviour
 
         Debug.Log(children.Count);
 
-        if (Input.GetKeyDown(KeyCode.G))
-        {
-            TakeDamage();
-        }
+        // if (Input.GetKeyDown(KeyCode.G))
+        // {
+        //     TakeDamage();
+        // }
     }
 }
