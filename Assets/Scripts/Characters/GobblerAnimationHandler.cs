@@ -9,6 +9,10 @@ public class GobblerAnimationHandler : MonoBehaviour
     void Start()
     {
         gobblerCount++;
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.OnReset.AddListener(Reset);
+        }
     }
 
     // Update is called once per frame
@@ -42,6 +46,11 @@ public class GobblerAnimationHandler : MonoBehaviour
             // We don't want the Gobblers to be deactivated and then summon the dialogue, for that doesn't work.
             GetComponent<EnemyHealth>().TakeDamage(); 
         }
+    }
+
+    void Reset()
+    {
+        gobblerCount = 0;
     }
 
     void SummonDialogue()

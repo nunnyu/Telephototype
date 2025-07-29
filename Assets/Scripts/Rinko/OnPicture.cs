@@ -74,6 +74,12 @@ public class OnPicture : MonoBehaviour
     {
         Vector3 direction = (indicator.transform.position - transform.position).normalized;
         Vector3 targetOffset = direction * distanceFromPlayer;
+
+        if (ChudevilSpawner.chudevilDead)
+        {
+            targetOffset *= 1.5f;
+        }
+
         hitbox.transform.position = targetOffset + transform.position;
         hitbox.transform.rotation = indicator.transform.rotation;
         hitbox.SetActive(true);

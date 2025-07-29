@@ -48,11 +48,17 @@ public class GobblerAttackBehavior : MonoBehaviour
 
     void CheckValid()
     {
-        Collider2D hit = Physics2D.OverlapCircle(transform.position, .2f);
+        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, 0.2f);
 
-        if (hit.tag == "Spirit")
+        insideGobbler = false;
+
+        foreach (var hit in hits)
         {
-            insideGobbler = true;
+            if (hit.CompareTag("Spirit"))
+            {
+                insideGobbler = true;
+                break;
+            }
         }
     }
 }
