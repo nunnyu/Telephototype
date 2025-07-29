@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     public UnityEvent OnTutorialFightEnd;
     public UnityEvent GobblersDefeated;
     public UnityEvent OnReset; // for when the player dies, or they go back a save point
-    public bool IsTutorialFightActive { get; private set; } = false;
+    public bool IsTutorialFightActive { get; private set; } = false;    
 
     void Update()
     {

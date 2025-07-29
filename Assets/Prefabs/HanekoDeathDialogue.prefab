@@ -96,11 +96,11 @@ MonoBehaviour:
   automaticDestruction: 0
   dialogues:
   - text: 'good noko. this is surely it, i am now inside of your camera, i think-noko. '
-    sprite: {fileID: 6485290393343850530, guid: 3c5a06f19a7f5e947a8fd7961e028425, type: 3}
+    sprite: {fileID: -5993402727874303184, guid: 5e15428edf7044b439e34d6c63ccbe5c, type: 3}
     audio: {fileID: 8300000, guid: 8d826295ddd08c74db2ce74e3026f41c, type: 3}
   - text: you can still talk to me?!
     sprite: {fileID: -2795693140052960006, guid: ae955fb2a1ab10d429af77b34245a8f5, type: 3}
     audio: {fileID: 8300000, guid: f9483268f30780e49b21e9e11b701a21, type: 3}
   - text: yep-noko
-    sprite: {fileID: 6485290393343850530, guid: 3c5a06f19a7f5e947a8fd7961e028425, type: 3}
+    sprite: {fileID: -5993402727874303184, guid: 5e15428edf7044b439e34d6c63ccbe5c, type: 3}
     audio: {fileID: 0}
