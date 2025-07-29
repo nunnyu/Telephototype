@@ -28326,6 +28326,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gobbler
       objectReference: {fileID: 0}
+    - target: {fileID: 2310918589347291882, guid: 61770bfa35bbd164792813fa3fd03484, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3529051000627510722, guid: 61770bfa35bbd164792813fa3fd03484, type: 3}
       propertyPath: dialogue
       value: 

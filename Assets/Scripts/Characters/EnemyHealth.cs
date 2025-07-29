@@ -17,6 +17,8 @@ public class EnemyHealth : MonoBehaviour
     private bool canBeDamaged = false;
     private int originalHealth;
     private Vector2 originalPosition;
+    private Sprite defaultSprite;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -36,10 +38,14 @@ public class EnemyHealth : MonoBehaviour
         {
             GameManager.Instance.OnReset.AddListener(Reset);
         }
+
+        defaultSprite = sr.sprite;
     }
 
     void Reset()
     {
+        sr.sprite = defaultSprite;
+
         health = originalHealth;
         transform.position = originalPosition;
     }

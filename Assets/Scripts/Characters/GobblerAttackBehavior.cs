@@ -6,6 +6,7 @@ public class GobblerAttackBehavior : MonoBehaviour
     [SerializeField] private float delay;
     private Vector2 direction;
     private bool startMoving = false;
+    private bool insideGobbler = false;
 
     // Update is called once per frame
     void Update()
@@ -20,13 +21,20 @@ public class GobblerAttackBehavior : MonoBehaviour
 
     void StartMoving()
     {
-        startMoving = true;
+        CheckValid();
+        if (insideGobbler)
+            startMoving = true;
+        else
+        {
+            Destroy();
+        }
     }
 
     void Start()
     {
         transform.position = transform.position - (new Vector3(0, .4f, 0));
         startMoving = false;
+
         Invoke("StartMoving", delay);
         direction = new Vector2(1, 0);
 
@@ -36,5 +44,15 @@ public class GobblerAttackBehavior : MonoBehaviour
     void Destroy()
     {
         Destroy(gameObject);
+    }
+
+    void CheckValid()
+    {
+        Collider2D hit = Physics2D.OverlapCircle(transform.position, .2f);
+
+        if (hit.tag == "Spirit")
+        {
+            insideGobbler = true;
+        }
     }
 }
