@@ -25,7 +25,7 @@ public class GobblerAttackBehavior : MonoBehaviour
 
     void Start()
     {
-        transform.position = transform.position - (new Vector3(0, .5f, 0));
+        transform.position = transform.position - (new Vector3(0, .4f, 0));
         startMoving = false;
         Invoke("StartMoving", delay);
         direction = new Vector2(1, 0);
