@@ -13,7 +13,12 @@ public class HitboxBehavior : MonoBehaviour
     {
         if (ChudevilSpawner.chudevilDead == true)
         {
-            transform.localScale = new Vector3(.6f, 2, 1);
+            Invoke("UpdateSize", 1);
         }
+    }
+
+    void UpdateSize()
+    {
+        transform.localScale = new Vector3(.6f, 2, 1);
     }
 }

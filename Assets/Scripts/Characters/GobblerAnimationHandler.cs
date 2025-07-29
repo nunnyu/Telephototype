@@ -50,7 +50,7 @@ public class GobblerAnimationHandler : MonoBehaviour
 
     void Reset()
     {
-        gobblerCount = 0;
+        gobblerCount = 3;
     }
 
     void SummonDialogue()

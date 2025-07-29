@@ -26683,7 +26683,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1463224776}
-  - component: {fileID: 1463224777}
   m_Layer: 0
   m_Name: Visualized Checkpoint (1)
   m_TagString: Untagged
@@ -26707,18 +26706,6 @@ Transform:
   - {fileID: 1487788236}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1463224777
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1463224775}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6eb3866293845574d88fb53f1a902ac8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1487788235
 GameObject:
   m_ObjectHideFlags: 0
@@ -26731,6 +26718,7 @@ GameObject:
   - component: {fileID: 1487788237}
   - component: {fileID: 1487788239}
   - component: {fileID: 1487788238}
+  - component: {fileID: 1487788240}
   m_Layer: 0
   m_Name: Light 2D
   m_TagString: Untagged
@@ -26878,6 +26866,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1487788240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1487788235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6eb3866293845574d88fb53f1a902ac8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1523400048 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6102323122517570875, guid: 2a9490a54c36519489ca5e6501ede993, type: 3}
