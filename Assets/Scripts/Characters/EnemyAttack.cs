@@ -76,7 +76,13 @@ public class EnemyAttack : MonoBehaviour
     void ActivateInstance()
     {
         IsAttacking = true;
-        Vector3 direction = (target.position - transform.position).normalized;
+        Vector3 direction = new Vector3(0, 0, 0);
+        
+        if (target != null && transform != null)
+        {
+            direction = (target.position - transform.position).normalized;
+        }
+        
         Vector3 targetOffset = direction * distanceFromEnemy;
         var targetPos = targetOffset + transform.position;
 

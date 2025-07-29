@@ -101,6 +101,7 @@ public class EnemyHealth : MonoBehaviour
 
     void Die()
     {
+        GameManager.spiritsCaptured++;
         gameObject.SetActive(false);
     }
 
@@ -114,14 +115,15 @@ public class EnemyHealth : MonoBehaviour
         }
 
         // "Vulnerable during attack" logic
-        if (attackScript.IsAttacking)
-        {
-            canBeDamaged = true;
-        }
-        else
-        {
-            canBeDamaged = false;
-        }
+        if (attackScript != null)
+            if (attackScript.IsAttacking)
+            {
+                canBeDamaged = true;
+            }
+            else
+            {
+                canBeDamaged = false;
+            }
 
         sr.color = Color.Lerp(sr.color, originalColor, colorLerpSpeed * Time.deltaTime);
 

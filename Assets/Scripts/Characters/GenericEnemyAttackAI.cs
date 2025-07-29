@@ -9,6 +9,14 @@ public class GenericEnemyAttackAI : MonoBehaviour
     [SerializeField] private float highestDelay = 4f;
     private bool isAttackingCoroutineRunning = false;
 
+    void Start()
+    {
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.OnReset.AddListener(Reset);
+        }
+    }
+
     bool PlayerInRange()
     {
         Vector2 center = new Vector2(transform.position.x + detectionOffset.x, transform.position.y + detectionOffset.y);
@@ -25,12 +33,18 @@ public class GenericEnemyAttackAI : MonoBehaviour
         return false;
     }
 
+    void Reset()
+    {
+        isAttackingCoroutineRunning = false; // This addresses the bug where enemies mid attack death 
+        // (which is usually always) will stop attacking when the player encounters them again 
+    }
+
 
     void Update()
     {
         if (PlayerInRange())
         {
-            Debug.Log("Rock attacking");
+            Debug.Log("Attacking!");
             if (!isAttackingCoroutineRunning)
             {
                 StartCoroutine(RandomAttackLoop());
