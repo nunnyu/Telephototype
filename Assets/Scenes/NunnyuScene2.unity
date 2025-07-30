@@ -28434,7 +28434,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 0e1c6c8512e3c7a42a10e38758247eca, type: 3}
   m_Resource: {fileID: 8300000, guid: 0e1c6c8512e3c7a42a10e38758247eca, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -28531,7 +28531,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 0e1c6c8512e3c7a42a10e38758247eca, type: 3}
   m_Resource: {fileID: 8300000, guid: 0e1c6c8512e3c7a42a10e38758247eca, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -28955,7 +28955,7 @@ MonoBehaviour:
   - text: 'RUN AWAY FOOL! COME BACK WHEN YOU ARE WORTHY ENOUGH TO FIGHT ME. '
     sprite: {fileID: 21300000, guid: c0e7a2d173e71124ab06c0eed4d61aec, type: 2}
     audio: {fileID: 8300000, guid: 38267f686c7af0a40b1567caf5c8b711, type: 3}
-  - text: very wise-noko. keep moving forward
+  - text: 'very wise-noko. keep moving forward; i have a bad feeling about this one. '
     sprite: {fileID: -5993402727874303184, guid: 5e15428edf7044b439e34d6c63ccbe5c, type: 3}
     audio: {fileID: 8300000, guid: a2f789b0bce9c6742b1a4df03c31b733, type: 3}
 --- !u!61 &1004877790
@@ -35652,11 +35652,11 @@ PrefabInstance:
       objectReference: {fileID: 1567589393}
     - target: {fileID: 8316218856078848319, guid: 28312eff51b18ec41ac78a2b9cb3f61f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 18.99
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8316218856078848319, guid: 28312eff51b18ec41ac78a2b9cb3f61f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 37.82
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 8316218856078848319, guid: 28312eff51b18ec41ac78a2b9cb3f61f, type: 3}
       propertyPath: m_LocalPosition.z

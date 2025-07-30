@@ -15,7 +15,7 @@ public class SpawnDeathDialogue : MonoBehaviour
     {
         if (GetComponent<EnemyHealth>().GetHealth() == 0)
         {
-            Invoke("SpawnDialogue", 1);
+            Invoke("SpawnDialogue", 3);
         }
     }
 

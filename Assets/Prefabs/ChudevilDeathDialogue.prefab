@@ -104,6 +104,6 @@ MonoBehaviour:
   - text: noko noko... hmmm...
     sprite: {fileID: -5993402727874303184, guid: 5e15428edf7044b439e34d6c63ccbe5c, type: 3}
     audio: {fileID: 0}
-  - text: seeing your own turmoil come to rest, makes me feel good tooo, noko.
+  - text: seeing your own turmoil come to rest, makes me feel good too, noko.
     sprite: {fileID: -5993402727874303184, guid: 5e15428edf7044b439e34d6c63ccbe5c, type: 3}
     audio: {fileID: 0}

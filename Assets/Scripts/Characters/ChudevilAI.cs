@@ -30,7 +30,6 @@ public class ChudevilAI : MonoBehaviour
         {
             if (hit.CompareTag("Player") /*|| hit.CompareTag("CameraPoses")*/)
             {
-                Invoke("SpawnDialogue", 1);
                 return true;
             }
         }
@@ -59,6 +58,7 @@ public class ChudevilAI : MonoBehaviour
 
         if (GetComponent<EnemyHealth>().GetHealth() == 0)
         {
+            Invoke("SpawnDialogue", 3);
             ChudevilSpawner.chudevilDead = true;
         }
     }
