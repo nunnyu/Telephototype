@@ -50,7 +50,7 @@ public class PlayerHealth : MonoBehaviour
         transform.position = FindAnyObjectByType<GameManager>().rinkoSpawn;
     }
 
-    void ResetHealth()
+    public void ResetHealth()
     {
         health = startingHealth;
     }
