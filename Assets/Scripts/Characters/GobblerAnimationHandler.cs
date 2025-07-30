@@ -18,7 +18,7 @@ public class GobblerAnimationHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(gobblerCount);
+        Debug.Log("Gobblers: " + gobblerCount);
 
         if (GetComponent<EnemyAttack>().IsAttacking)
         {
@@ -51,6 +51,7 @@ public class GobblerAnimationHandler : MonoBehaviour
     void Reset()
     {
         gobblerCount = 3;
+        counted = false;
     }
 
     void SummonDialogue()

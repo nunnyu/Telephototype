@@ -13,8 +13,13 @@ public class GameManager : MonoBehaviour
     public UnityEvent GobblersDefeated;
     public UnityEvent OnReset; // for when the player dies, or they go back a save point
     public bool IsTutorialFightActive { get; private set; } = false;
-    private int checkpoint = 0;
+    public GameObject fadeIn;
+    private int checkpoint = 1;
 
+    public void UpdateCheckpoint(int checkpoint)
+    {
+        this.checkpoint = checkpoint;
+    }
 
     void Update()
     {
@@ -40,6 +45,18 @@ public class GameManager : MonoBehaviour
         OnReset.AddListener(ResetSpirits);
     }
 
+    public void PartOneEnd()
+    {
+        Instantiate(fadeIn);
+        Invoke("LoadNextScene", 3);
+    }
+
+    public void LoadNextScene()
+    {
+        int currentIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentIndex + 1);
+    }
+
     public void TriggerReset()
     {
         Debug.Log("RESETTING WORLD");
@@ -58,12 +75,21 @@ public class GameManager : MonoBehaviour
                 obj.scene.IsValid() &&
                 obj.scene == SceneManager.GetActiveScene())
             {
-                obj.SetActive(true);
+                if (checkpoint == 1)
+                {
+                    obj.SetActive(true);
+                    spiritsCaptured = 1; // not zero because Haneko is always captured before the first death 
+                }
+                else if (checkpoint == 2)
+                {
+                    spiritsCaptured = 5;
+                    // do nothing(?) 
+                }
             }
         }
 
 
-        spiritsCaptured = 1; // not zero because Haneko is always captured before the first death 
+
     }
 
     // This is referenced by a trigger event zone object

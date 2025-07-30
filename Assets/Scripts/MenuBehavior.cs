@@ -3,10 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class MenuBehavior : MonoBehaviour
 {
-    public GameObject dialogueBox;
+    public GameObject fadeIn;
     public Vector2 targetPos = new Vector2(900, -300);
-    private bool hide = false;
-
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -19,15 +17,11 @@ public class MenuBehavior : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Z))
         {
-            hide = true;
-            Invoke("NextScene", 1);
-        }
-
-        if (hide)
-        {
-            dialogueBox.transform.position = Vector3.Lerp(dialogueBox.transform.position, targetPos, 5 * Time.deltaTime);
+            Instantiate(fadeIn);
+            Invoke("NextScene", 3);
         }
     }
+
     void NextScene()
     {
         int currentIndex = SceneManager.GetActiveScene().buildIndex;

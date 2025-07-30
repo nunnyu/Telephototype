@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class UpdateCheckpoint : MonoBehaviour
 {
+    public int checkpointNumber = 2;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -20,7 +22,10 @@ public class UpdateCheckpoint : MonoBehaviour
         {
             Debug.Log("New checkpoint unlocked.");
             if (GameManager.Instance != null)
+            {
                 GameManager.Instance.rinkoSpawn = transform.position;
+                GameManager.Instance.UpdateCheckpoint(checkpointNumber);
+            }
         }
     }
 }

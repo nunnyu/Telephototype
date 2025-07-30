@@ -27,10 +27,15 @@ public class LocklingBehavior : MonoBehaviour
     {
         if (GameManager.spiritsCaptured == enemiesNeeded && !disabled)
         {
-            lockling.SetActive(false);
+            Invoke("HideLockling", dialogueDelay + .3f);
             Invoke("MakeDialogue", dialogueDelay);
             disabled = true;
         }
+    }
+
+    void HideLockling()
+    {
+        lockling.SetActive(false);
     }
 
     void MakeDialogue()

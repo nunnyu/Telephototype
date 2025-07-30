@@ -15,6 +15,7 @@ public class BackgroundMusic : MonoBehaviour
     private AudioState state = AudioState.Playing;
 
     private bool swapRequested = false;
+    private float ogVolume;
 
     void Start()
     {
@@ -22,8 +23,9 @@ public class BackgroundMusic : MonoBehaviour
         currentTrackIndex = 0;
         source = GetComponent<AudioSource>();
         source.clip = tracks[currentTrackIndex];
-        source.volume = 1f;
         source.Play();
+        ogVolume = source.volume;
+
     }
 
     public void Swap()
@@ -58,8 +60,8 @@ public class BackgroundMusic : MonoBehaviour
                 break;
 
             case AudioState.FadingIn:
-                source.volume = Mathf.MoveTowards(source.volume, 1f, Time.deltaTime * fadeSpeed);
-                if (source.volume >= 0.99f)
+                source.volume = Mathf.MoveTowards(source.volume, ogVolume, Time.deltaTime * fadeSpeed);
+                if (source.volume >= ogVolume - .01f)
                 {
                     state = AudioState.Playing;
                 }

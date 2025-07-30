@@ -17,9 +17,6 @@ public class ChudevilSpawner : MonoBehaviour
     // Update is called once per frame
     void Reset()
     {
-        if (!chudevilDead)
-        {
-            Instantiate(chudevil, transform.position, transform.rotation);
-        }
+        Instantiate(chudevil, transform.position, transform.rotation);
     }
 }

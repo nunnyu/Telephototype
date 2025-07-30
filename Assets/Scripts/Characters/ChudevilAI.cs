@@ -5,6 +5,7 @@ public class ChudevilAI : MonoBehaviour
 {
     [SerializeField] private float detectionRadius = 3f;
     [SerializeField] private Vector2 detectionAreaPos = new Vector2(0, 0);
+    [SerializeField] private GameObject dialogue;
     private bool attacking = false;
 
     void Start()
@@ -29,11 +30,17 @@ public class ChudevilAI : MonoBehaviour
         {
             if (hit.CompareTag("Player") /*|| hit.CompareTag("CameraPoses")*/)
             {
+                Invoke("SpawnDialogue", 1);
                 return true;
             }
         }
 
         return false;
+    }
+
+    void SpawnDialogue()
+    {
+        Instantiate(dialogue);
     }
 
     public bool IsAttacking()

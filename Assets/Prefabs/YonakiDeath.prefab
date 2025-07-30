@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4100630731193557349}
   - component: {fileID: 5147200992457207781}
   m_Layer: 0
-  m_Name: GobblerDialogue
+  m_Name: YonakiDeath
   m_TagString: Untagged
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -26,10 +26,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 432045308560475119}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0025632381, y: -0.17271245, z: 0}
-  m_LocalScale: {x: 8.58, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -95,13 +95,6 @@ MonoBehaviour:
   toDestroy: 1
   automaticDestruction: 0
   dialogues:
-  - text: 'Rinko...  '
-    sprite: {fileID: 1652927773195129852, guid: 7f73f9be57bed3f458bfa431d39aa0a5, type: 3}
-    audio: {fileID: 8300000, guid: 89327ff845d23304cb7e067e614dd5aa, type: 3}
-  - text: We are thou, and thou art us.
-    sprite: {fileID: 1652927773195129852, guid: 7f73f9be57bed3f458bfa431d39aa0a5, type: 3}
-    audio: {fileID: 0}
-  - text: "You carry stories like they're precious, but treat your own like it\u2019s
-      worthless."
-    sprite: {fileID: 1652927773195129852, guid: 7f73f9be57bed3f458bfa431d39aa0a5, type: 3}
-    audio: {fileID: 0}
+  - text: 'YOU LIKE TO HIDE RINKO... EVEN IN THE AFTERLIFE... COWARDOUS... '
+    sprite: {fileID: 21300000, guid: c0e7a2d173e71124ab06c0eed4d61aec, type: 2}
+    audio: {fileID: 8300000, guid: 38267f686c7af0a40b1567caf5c8b711, type: 3}
