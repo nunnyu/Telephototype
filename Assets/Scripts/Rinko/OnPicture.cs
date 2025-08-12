@@ -77,7 +77,7 @@ public class OnPicture : MonoBehaviour
 
         if (ChudevilSpawner.chudevilDead)
         {
-            targetOffset *= 1.5f;
+            targetOffset *= 1.8f;
         }
 
         hitbox.transform.position = targetOffset + transform.position;

@@ -19,6 +19,6 @@ public class HitboxBehavior : MonoBehaviour
 
     void UpdateSize()
     {
-        transform.localScale = new Vector3(.6f, 2, 1);
+        transform.localScale = new Vector3(.6f, 2.5f, 1);
     }
 }

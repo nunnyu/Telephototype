@@ -97,7 +97,7 @@ MonoBehaviour:
   dialogues:
   - text: 'Rinko...  '
     sprite: {fileID: 1652927773195129852, guid: 7f73f9be57bed3f458bfa431d39aa0a5, type: 3}
-    audio: {fileID: 8300000, guid: 89327ff845d23304cb7e067e614dd5aa, type: 3}
+    audio: {fileID: 0}
   - text: We are thou, and thou art us.
     sprite: {fileID: 1652927773195129852, guid: 7f73f9be57bed3f458bfa431d39aa0a5, type: 3}
     audio: {fileID: 0}

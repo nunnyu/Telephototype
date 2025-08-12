@@ -190,33 +190,53 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector2 direction = input.normalized;
         float distance = moveSpeed * Time.fixedDeltaTime;
-        Vector2 position = new Vector3(transform.position.x, transform.position.y + offset);
-
-        RaycastHit2D[] hits = Physics2D.BoxCastAll(position, raycastBoxSize, 0f, direction, distance, collisionLayerMask);
-
-        bool blocked = false;
-        float shortestSafeDistance = distance;
-
-        foreach (RaycastHit2D hit in hits)
-        {
-            if (hit.collider != null && !hit.collider.isTrigger)
-            {
-                blocked = true;
-                shortestSafeDistance = Mathf.Min(shortestSafeDistance, hit.distance - 0.01f); // Tiny buffer
-            }
-        }
+        Vector2 position = new Vector2(transform.position.x, transform.position.y + offset);
 
         if (CanMove && !DialogueLock)
         {
-            if (blocked)
+            // Try full movement first
+            if (!IsBlocked(position, direction, distance))
             {
-                rb.MovePosition(rb.position + direction * shortestSafeDistance);
+                Move();
             }
             else
             {
-                Move(); // Nothing is blocking our position
+                // Try horizontal only
+                Vector2 horizontal = new Vector2(direction.x, 0f);
+                if (!IsBlocked(position, horizontal, distance))
+                {
+                    rb.MovePosition(rb.position + horizontal * distance);
+                }
+
+                // Try vertical only
+                Vector2 vertical = new Vector2(0f, direction.y);
+                if (!IsBlocked(position, vertical, distance))
+                {
+                    rb.MovePosition(rb.position + vertical * distance);
+                }
             }
         }
+    }
+
+    bool IsBlocked(Vector2 position, Vector2 dir, float dist)
+    {
+        if (dir == Vector2.zero) return true;
+
+        RaycastHit2D[] hits = Physics2D.BoxCastAll(
+            position,
+            raycastBoxSize,
+            0f,
+            dir,
+            dist,
+            collisionLayerMask
+        );
+
+        foreach (var hit in hits)
+        {
+            if (hit.collider != null && !hit.collider.isTrigger)
+                return true;
+        }
+        return false;
     }
 
     void Audio()

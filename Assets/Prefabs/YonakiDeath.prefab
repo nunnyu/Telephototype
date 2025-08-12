@@ -95,6 +95,6 @@ MonoBehaviour:
   toDestroy: 1
   automaticDestruction: 0
   dialogues:
-  - text: 'YOU LIKE TO HIDE RINKO... EVEN IN THE AFTERLIFE... COWARDOUS... '
+  - text: 'YOU LIKE TO HIDE RINKO... EVEN IN THE AFTERLIFE... COWARDICE... '
     sprite: {fileID: 21300000, guid: c0e7a2d173e71124ab06c0eed4d61aec, type: 2}
     audio: {fileID: 8300000, guid: 38267f686c7af0a40b1567caf5c8b711, type: 3}
