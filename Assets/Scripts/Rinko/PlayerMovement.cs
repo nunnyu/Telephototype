@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using Unity.Mathematics;
-using UnityEditor.Tilemaps;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
