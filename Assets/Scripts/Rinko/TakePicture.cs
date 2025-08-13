@@ -80,7 +80,7 @@ public class TakePicture : MonoBehaviour
     {
         var audioSource = GetComponent<AudioSource>();
         audioSource.clip = snapSound;
-        audioSource.PlayDelayed(soundDelay);
+        audioSource.PlayScheduled(AudioSettings.dspTime + soundDelay);
 
         lastPosition = defaultPose.transform.position;
         defaultPose.SetActive(false);

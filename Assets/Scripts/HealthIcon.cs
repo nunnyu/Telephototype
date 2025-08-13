@@ -8,12 +8,12 @@ public class HealthIcon : MonoBehaviour
     public Sprite med;
     public Sprite low;
     private UnityEngine.UI.Image image;
+    private int lastHealth;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         image = GetComponent<UnityEngine.UI.Image>();
-
     }
 
     // Update is called once per frame
@@ -28,7 +28,7 @@ public class HealthIcon : MonoBehaviour
         {
             image.sprite = med;
         }
-        else
+        else if (health == 1)
         {
             image.sprite = low;
         }
