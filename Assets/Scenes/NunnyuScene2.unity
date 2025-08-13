@@ -9489,6 +9489,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2611bfe17ff6ca4ab0c5e22782b1694, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnablePrefab: {fileID: 8733081744257270918, guid: 139896d9e9ddbdf41abff5098ed70c12, type: 3}
 --- !u!4 &617834621 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5036006684847229833, guid: 0035d9f5d1c22be4cadac7ef22162a6b, type: 3}
