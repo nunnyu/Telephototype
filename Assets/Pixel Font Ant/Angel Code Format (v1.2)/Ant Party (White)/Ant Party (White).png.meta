@@ -189,7 +189,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -1097,7 +1097,46 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Ant Party (White)_0: -959743811560010722
+      Ant Party (White)_1: -6149243851386409456
+      Ant Party (White)_10: -635905288757816332
+      Ant Party (White)_11: 4046505068832605417
+      Ant Party (White)_12: -1977073685357497094
+      Ant Party (White)_13: 5786885842291089734
+      Ant Party (White)_14: -6352195214774484093
+      Ant Party (White)_15: -7506368157149529109
+      Ant Party (White)_16: -3694060708928213666
+      Ant Party (White)_17: -4106628989801660490
+      Ant Party (White)_18: -7668052255478826414
+      Ant Party (White)_19: -850503046978245680
+      Ant Party (White)_2: -583913354155179654
+      Ant Party (White)_20: -7506651950562565967
+      Ant Party (White)_21: 7370430842245403586
+      Ant Party (White)_22: 3108253776906416509
+      Ant Party (White)_23: 6299825736839525403
+      Ant Party (White)_24: -6144098678454180075
+      Ant Party (White)_25: 3354748365418282229
+      Ant Party (White)_26: 2031590319243789250
+      Ant Party (White)_27: 6071597020846912638
+      Ant Party (White)_28: -8105859319644598366
+      Ant Party (White)_29: 3556706173265974880
+      Ant Party (White)_3: 2561117557807708137
+      Ant Party (White)_30: 680343468994713409
+      Ant Party (White)_31: -3805552924153511579
+      Ant Party (White)_32: -8173520622388661500
+      Ant Party (White)_33: -5540563874261661004
+      Ant Party (White)_34: 4823331814242390422
+      Ant Party (White)_35: -7536214496640426209
+      Ant Party (White)_36: -1881214168077792695
+      Ant Party (White)_37: -2063201133545248173
+      Ant Party (White)_38: 5814981005490120276
+      Ant Party (White)_4: 7312009941376355166
+      Ant Party (White)_5: -3038400678496170710
+      Ant Party (White)_6: -274123090503552890
+      Ant Party (White)_7: 7924174168263358210
+      Ant Party (White)_8: 2747332105431804379
+      Ant Party (White)_9: 2430004942413495935
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

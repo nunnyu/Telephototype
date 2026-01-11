@@ -78,9 +78,10 @@ public class TakePicture : MonoBehaviour
 
     void OnCameraInput()
     {
-        var audioSource = GetComponent<AudioSource>();
-        audioSource.clip = snapSound;
-        audioSource.PlayDelayed(soundDelay);
+        // Changing it to just play from the hitbox behavior script
+        // var audioSource = GetComponent<AudioSource>();
+        // audioSource.clip = snapSound;
+        // audioSource.PlayScheduled(AudioSettings.dspTime + soundDelay);
 
         lastPosition = defaultPose.transform.position;
         defaultPose.SetActive(false);

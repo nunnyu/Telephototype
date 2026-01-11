@@ -69,7 +69,7 @@ public class DialogueBehavior : MonoBehaviour
             // walking into another dialogue really funky - as it tries to hide it in the middle of 
             // your new dialogue. 
             DialogueManager.ShowDialogue = true;
-            if (Input.GetKeyDown(KeyCode.Z) && !automaticDestruction)
+            if (Input.GetKeyDown(KeyCode.E) && !automaticDestruction)
             {
                 current++;
                 if (current == dialogues.Length)

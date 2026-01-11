@@ -12,6 +12,8 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] private GameObject noEffectText;
     [SerializeField] private float deathDelay = 0.5f;
     [SerializeField] private GameObject hitText;
+    [SerializeField] private GameObject weakUI;
+
     private Color originalColor;
     private List<Transform> children;
     private bool canBeDamaged = false;
@@ -111,6 +113,16 @@ public class EnemyHealth : MonoBehaviour
         gameObject.SetActive(false);
     }
 
+    void DisplayWeakUI()
+    {
+        weakUI.SetActive(true);
+    }
+
+    void HideWeakUI()
+    {
+        weakUI.SetActive(false);
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -139,6 +151,15 @@ public class EnemyHealth : MonoBehaviour
             {
                 child.gameObject.GetComponent<SpriteRenderer>().color = Color.Lerp(sr.color, originalColor, colorLerpSpeed * Time.deltaTime);
             }
+        }
+        
+        if (canBeDamaged)
+        {
+            DisplayWeakUI();
+        }
+        else 
+        {
+            HideWeakUI();
         }
     }
 }
